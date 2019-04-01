@@ -13,7 +13,7 @@ content-type: riferimento
 discoiquuid: 58 aa 6 ea 8-1 d 45-4 f 6 f-a 77 e -4819 f 593 a 19 d
 mwpw-migration-script-version: 2017-10-12 T 21 58.665-0400
 translation-type: tm+mt
-source-git-commit: 796c55d3d85e6b5a3efaa5c04a25be1b0b4e54dd
+source-git-commit: 7a94b0b010461b29d2b74c9c717e3b218d0ca5a8
 
 ---
 
@@ -390,7 +390,7 @@ cssClassName='className'}"></article>
 
 >[!NOTE]
 >
->AEM offre un controllo logico semplice e semplice sui tag decoration che racchiudono gli elementi inclusi. Per informazioni dettagliate consultate [Tag decoration (Tag decoration)](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/decoration-tag) nella documentazione sullo sviluppo dei componenti.
+>AEM offre una logica semplice e semplice che controllano i tag decoration che racchiudono gli elementi inclusi. Per informazioni dettagliate consultate [Tag decoration (Tag decoration)](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/decoration-tag.html) nella documentazione sullo sviluppo dei componenti.
 
 ## include {#include}
 
