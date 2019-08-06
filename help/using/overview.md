@@ -1,13 +1,8 @@
 ---
-title: Panoramica
-seo-title: Panoramica
-description: Lo scopo di HTL supportato da AEM è quello di offrire un framework Web
-  a livello di Enterprise altamente produttivo che aumenta la sicurezza e consente
-  agli sviluppatori HTML senza conoscenze Java di partecipare meglio ai progetti AEM.
-seo-description: Lo scopo di HTML Template Language (HTL) supportato da Adobe Experience
-  Manager è quello di offrire un framework Web altamente produttivo a livello di Enterprise
-  che incrementa la sicurezza e consente agli sviluppatori HTML senza conoscenze Java
-  di partecipare meglio ai progetti AEM.
+title: Panoramica HTL di AEM
+seo-title: Panoramica della documentazione tecnica HTL di AEM.
+description: Lo scopo di HTL supportato da AEM è quello di offrire un framework Web a livello di Enterprise altamente produttivo che aumenta la sicurezza e consente agli sviluppatori HTML senza conoscenze Java di partecipare meglio ai progetti AEM.
+seo-description: In questo documento sono illustrati i principi e lo scopo del linguaggio HTML Template Language (HTL) supportato da Adobe Experience Manager. HTL è un framework Web di livello aziendale altamente produttivo che aumenta la protezione e consente agli sviluppatori HTML senza conoscenze Java di partecipare meglio ai progetti AEM.
 uuid: 8 f 486325-0 a 1 b -4186-a 998-96 fc 0034 c 44 a
 contentOwner: Utente
 products: SG_ EXPERIENCEMANAGER/HTL
@@ -16,7 +11,7 @@ content-type: riferimento
 discoiquuid: 8 f 779 e 08-94 c 7-43 bc-a 6 e 5-d 81 a 9 f 818 c 5 c
 mwpw-migration-script-version: 2017-10-12 T 21 58.665-0400
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: 1d4565a4cffa6e5d42d6a5242f7ce62203dc7c63
 
 ---
 
