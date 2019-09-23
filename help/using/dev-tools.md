@@ -1,20 +1,20 @@
 ---
 title: Strumenti per sviluppatori
 seo-title: Strumenti per sviluppatori
-description: Un elenco di strumenti di sviluppo HTL
-seo-description: Un elenco di strumenti di sviluppo HTL
-uuid: cfedb 0 d 3-016 e -4 eca -965 d-b 5 c 2 d 217 e 919
+description: Un elenco degli strumenti di sviluppo HTL
+seo-description: Un elenco degli strumenti di sviluppo HTL
+uuid: cfedb0d3-016e-4eca-965d-b5c2d217e919
 contentOwner: Utente
-products: SG_ EXPERIENCEMANAGER/HTL
+products: SG_EXPERIENCEMANAGER/HTL
 content-type: riferimento
 topic-tags: html-template-language
-discoiquuid: 688 d 7 ae 8-bbda -4153-89 bb-c 51812 f 0 c 0 a 7
-mwpw-migration-script-version: 2017-10-12 T 21 58.665-0400
+discoiquuid: 688d7ae8-bbda-4153-89bb-c51812f0c0a7
+mwpw-migration-script-version: 2017-10-12T21 46 58,665-0400
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: eb80a5859f86c894dbcb53bbfc9e2841c48a7d98
 
 ---
 
@@ -23,12 +23,12 @@ source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
 
 Per HTL sono disponibili i seguenti strumenti per sviluppatori:
 
-* [HTL Read Eval Print Loop](https://github.com/Adobe-Marketing-Cloud/aem-htl-repl)\
-   Un ambiente di esecuzione dal vivo per la riproduzione con la lingua, grande per l'apprendimento.
+* [HTL Leggi ciclo di stampa vendita](https://github.com/Adobe-Marketing-Cloud/aem-htl-repl)\
+   Un ambiente di esecuzione live per giocare con la lingua, ottimo per l'apprendimento.
 
-* [Estensione AEM Brackets](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/aem-brackets.html)\
-   Uno strumento semplice per gli sviluppatori front-end per lavorare sui componenti AEM.
+* [Estensione AEM Bracket](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/aem-brackets.html)\
+   Uno strumento semplice che consente agli sviluppatori front-end di lavorare sui componenti AEM.
 
-* [Estensione Eclipse di AEM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/aem-eclipse.html)\
-   Uno strumento per sviluppatori back-end per creare progetti AEM e modificarli facilmente.
+* [Estensione AEM Eclipse](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/aem-eclipse.html)\
+   Uno strumento per gli sviluppatori di back-end per creare progetti AEM e modificarli facilmente.
 
