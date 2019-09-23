@@ -1,37 +1,35 @@
 ---
-title: HTL javascript Use-API
-seo-title: HTL javascript Use-API
-description: The HTML Template Langugae - HTL - javascript Use-API consente a un file
-  HTL di accedere al codice helper scritto in javascript.
-seo-description: The HTML Template Langugae - HTL - javascript Use-API consente a
-  un file HTL di accedere al codice helper scritto in javascript.
-uuid: 7 ab 34 b 10-30 ac -44 d 6-926 b -0234 f 52 e 5541
+title: HTL JavaScript Use-API
+seo-title: HTL JavaScript Use-API
+description: Il linguaggio HTML Template Language - HTL - JavaScript Use-API consente a un file HTL di accedere al codice helper scritto in JavaScript.
+seo-description: Il linguaggio HTML Template Language - HTL - JavaScript Use-API consente a un file HTL di accedere al codice helper scritto in JavaScript.
+uuid: 7ab34b10-30ac-44d6-926b-0234f52e5541
 contentOwner: Utente
-products: SG_ EXPERIENCEMANAGER/HTL
+products: SG_EXPERIENCEMANAGER/HTL
 topic-tags: html-template-language
 content-type: riferimento
-discoiquuid: 18871 af 8-e 44 b -4 eec-a 483-fcc 765 dae 58 f
-mwpw-migration-script-version: 2017-10-12 T 21 58.665-0400
+discoiquuid: 18871af8-e44b-4eec-a483-fcc765dae58f
+mwpw-migration-script-version: 2017-10-12T21 46 58,665-0400
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: bd1962e25d152be4f1608d0a83d8d5b3e728b4aa
 
 ---
 
 
-# HTL javascript Use-API {#htl-javascript-use-api}
+# HTL JavaScript Use-API {#htl-javascript-use-api}
 
-Il linguaggio HTL (HTML Template Langugae (HTL) javascript Use-API consente a un file HTL di accedere al codice helper scritto in javascript. In questo modo, tutte le complessità di business complesse possono essere racchiuse nel codice javascript, mentre il codice HTL occupa solo la produzione di marcatura diretta.
+L'API Use-API JavaScript (HTL, HTML Template Language) JavaScript consente a un file HTL di accedere al codice helper scritto in JavaScript. Questo consente di incorporare nel codice JavaScript tutta la complessa logica aziendale, mentre il codice HTL si occupa solo della produzione di markup diretti.
 
 ## Esempio semplice {#a-simple-example}
 
-Definiamo un componente, `info`che si trova in
+Definiamo un componente, `info`, situato in
 
 **`/apps/my-example/components/info`**
 
 Contiene due file:
 
-* **`info.js`**: un file javascript che definisce la classe use.
-* `info.html`: un file HTL che definisce il componente `info`. Questo codice utilizza la funzionalità di `info.js` tramite l'API use.
+* **`info.js`**: un file JavaScript che definisce la classe use.
+* `info.html`: un file HTL che definisce il componente `info`. Questo codice utilizzerà la funzionalità di `info.js` tramite use-API.
 
 ### /apps/my-example/component/info/info.js {#apps-my-example-component-info-info-js}
 
@@ -54,15 +52,15 @@ use(function () {
 </div>
 ```
 
-Viene inoltre creato un nodo di contenuto che utilizza il **`info`** componente in
+Inoltre, viene creato un nodo di contenuto che utilizza il **`info`** componente in
 
-**`/content/my-example`**, con le proprietà:
+**`/content/my-example`**, con proprietà:
 
 * `sling:resourceType = "my-example/component/info"`
 * `title = "My Example"`
 * `description = "This is some example content."`
 
-Ecco la struttura dell'archivio risultante:
+Di seguito è riportata la struttura del repository risultante:
 
 ### Struttura archivio {#repository-structure}
 
@@ -92,7 +90,7 @@ Ecco la struttura dell'archivio risultante:
 }
 ```
 
-Prendete in considerazione il modello di componente seguente:
+Considera il seguente modello di componente:
 
 ```xml
 <section class="component-name" data-sly-use.component="component.js">
@@ -101,7 +99,7 @@ Prendete in considerazione il modello di componente seguente:
 </section>
 ```
 
-La logica corrispondente può essere scritta utilizzando javascript ***lato server*** , ubicato in un `component.js` file accanto al modello:
+La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato ****** server, situato in un `component.js` file accanto al modello:
 
 ```
 use(function () {
@@ -120,11 +118,11 @@ use(function () {
 });
 ```
 
-Questo tenta di acquisire le `title` origini da diverse sorgenti e ritaglia la descrizione a 50 caratteri.
+Questo cerca di prendere la descrizione `title` da origini diverse e ritagliarla a 50 caratteri.
 
 ## Dipendenze {#dependencies}
 
-Immaginiamo di disporre di una classe di utilità già dotata di funzionalità intelligenti, come la logica predefinita per il titolo di navigazione o di tagliare una stringa con una certa lunghezza:
+Immaginiamo di avere una classe di utilità già dotata di funzioni intelligenti, come la logica di default per il titolo di navigazione o che taglia bene una stringa a una certa lunghezza:
 
 ```
 use(['../utils/MyUtils.js'], function (utils) {
@@ -145,9 +143,9 @@ use(['../utils/MyUtils.js'], function (utils) {
 
 ## Estensione {#extending}
 
-Il pattern di dipendenza può essere utilizzato anche per estendere la logica di un altro componente (che in genere corrisponde al `sling:resourceSuperType` componente corrente).
+Il pattern di dipendenza può essere utilizzato anche per estendere la logica di un altro componente (che in genere corrisponde a quella `sling:resourceSuperType` del componente corrente).
 
-Immagina che il componente principale fornisca già l' `title`e che desideriamo aggiungere **`description`** anche:
+Immaginate che il componente principale fornisca già l' `title`, e vogliamo aggiungere **`description`** anche:
 
 ```
 use(['../parent-component/parent-component.js'], function (component) {
@@ -164,15 +162,15 @@ use(['../parent-component/parent-component.js'], function (component) {
 
 ## Trasmissione di parametri a un modello {#passing-parameters-to-a-template}
 
-Nel caso di **`data-sly-template`** istruzioni che possono essere indipendenti dai componenti, può essere utile trasmettere parametri all'API associata associata.
+Nel caso di **`data-sly-template`** istruzioni che possono essere indipendenti dai componenti, può essere utile trasmettere parametri all'API Use-API associata.
 
-Quindi, nel nostro componente, invochiamo un modello che si trova in un altro file:
+Nel nostro componente chiamiamo un modello che si trova in un file diverso:
 
 ```xml
 <section class="component-name" data-sly-use.tmpl="template.html" data-sly-call="${tmpl.templateName @ page=currentPage}"></section>
 ```
 
-Si tratta del modello in `template.html`:
+Quindi questo è il modello che si trova in `template.html`:
 
 ```xml
 <template data-sly-template.templateName="${@ page}" data-sly-use.tmpl="${'template.js' @ page=page, descriptionLength=50}">
@@ -181,7 +179,7 @@ Si tratta del modello in `template.html`:
 </template>
 ```
 
-La logica corrispondente può essere scritta utilizzando javascript ***lato server*** , ubicato in un `template.js` file accanto al file modello:
+La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato ****** server, situato in un `template.js` file accanto al file modello:
 
 ```
 use(function () {
@@ -199,4 +197,4 @@ use(function () {
 });
 ```
 
-I parametri passati sono impostati sulla `this` parola chiave.
+I parametri passati vengono impostati sulla `this` parola chiave.
