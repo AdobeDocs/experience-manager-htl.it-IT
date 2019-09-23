@@ -1,37 +1,35 @@
 ---
-title: Che cos'è HTL
-seo-title: Cos'è Adobe HTML Template Language - HTL
-description: HTML Template Language (HTL) è il sistema di modelli lato server preferito
-  di Adobe Experience Manager per HTML.
-seo-description: HTML Template Language, o HTL, è il sistema di modelli lato server
-  preferito di Adobe Experience Manager per HTML.
-uuid: 196 e 79 f 4-f 9 ff -451 d -86 e 5-394 feecd 2 e 50
+title: Cos’è HTL
+seo-title: Che cos’è Adobe HTML Template Language - HTL
+description: 'HTML Template Language (HTL) è il sistema di modelli lato server preferito di Adobe Experience Manager per HTML. '
+seo-description: 'HTML Template Language, o HTL, è il sistema di modelli lato server preferito di Adobe Experience Manager per HTML. '
+uuid: 196e79f4-f9ff-451d-86e5-394feecd2e50
 contentOwner: Utente
-products: SG_ EXPERIENCEMANAGER/HTL
+products: SG_EXPERIENCEMANAGER/HTL
 content-type: riferimento
-topic-tags: introduction
-discoiquuid: f 94 c 2 abc -2752-4922-9369-acb 76 c 3 f 00 e 9
+topic-tags: introduzione
+discoiquuid: f94c2abc-2752-4922-9369-acb76c3f00e9
 disttype: dist5
 gnavtheme: chiaro
-mwpw-migration-script-version: 2017-10-12 T 21 58.665-0400
+mwpw-migration-script-version: 2017-10-12T21 46 58,665-0400
 translation-type: tm+mt
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
+source-git-commit: 41d6afffb2f01def6398c0a17c53b28769b43f4b
 
 ---
 
 
-# Cos'è HTL? {#what-is-htl}
+# Cos’è HTL? {#what-is-htl}
 
-**Precedentemente noto come *Sightly***
+**Precedentemente Noto Come *Sightly***
 
 Aggiornato: Agosto 2016
 
-Il linguaggio HTML Template Language (denominato anche HTL) è il sistema di modelli lato server preferito di Adobe Experience Manager per HTML. Come in tutti i sistemi di modelli lato server HTML, un file HTL definisce l'output inviato al browser specificando il codice HTML stesso, alcune logica di presentazione di base e le variabili da valutare in fase di esecuzione.
+HTML Template Language (altrimenti denominato HTL) è il sistema di modelli lato server preferito da Adobe Experience Manager per HTML. Come in tutti i sistemi HTML di modelli lato server, un file HTL definisce l'output inviato al browser specificando l'HTML stesso, alcune logiche di presentazione di base e le variabili da valutare in fase di esecuzione.
 
-In AEM 6.0 e 6.1 HTL era denominato **Sightly**. La stiamo rinominando in «HTML Template Language» per chiarire quali sono le specifiche e per allineare le linee guida di denominazione di Adobe in generale. Questa modifica di denominazione avviene a partire dal 2016 agosto e si applica ad AEM versione 6.0, 6.1, 6.2 e tutte le versioni vanno avanti.
+In AEM 6.0 e 6.1 HTL è stato definito **Sightly**. Lo stiamo rinominando in "HTML Template Language" (Lingua modello HTML) per chiarire a cosa si riferisce la specifica e per allinearlo con le linee guida di denominazione di Adobe in generale. Questa modifica alla denominazione ha luogo da agosto 2016 e si applica alle versioni AEM 6.0, 6.1, 6.2 e a tutte le versioni successive.
 
 >[!NOTE]
 >
->Questa modifica di denominazione non influisce sul codice o sull'API, pertanto la compatibilità non viene modificata. Per ulteriori informazioni, consultate l'articolo del blog sull'Experience Matters, che approfondisce ulteriormente la rinominazione.
+>La modifica della denominazione non influisce sul codice o sull'API, pertanto la compatibilità non viene modificata. Per maggiori informazioni, consulta l’articolo del blog Experience Matters (Contenuti esperienza), che approfondisce la ridenominazione.
 
-Per saperne di più su HTL, consulta la Guida introduttiva [alla Guida HTML Templating Language (HTL)](overview.md).
+Per saperne di più su HTL e un ottimo posto per iniziare è la nostra [Guida](overview.md)ufficiale per iniziare con HTML Templating Language (HTL).
