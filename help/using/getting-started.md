@@ -4,12 +4,12 @@ seo-title: Guida introduttiva ad HTL
 description: HTL supportato da AEM sostituisce JSP come sistema di modelli lato server preferito e consigliato per HTML in AEM.
 seo-description: HTML Template Language - HTL - supportato da Adobe Experience Manager sostituisce JSP come sistema di modelli lato server preferito e consigliato per HTML in AEM.
 uuid: 4a7d6748-8cdf-4280-a85d-6c5319abf487
-content-type: riferimento
-topic-tags: introduzione
+content-type: reference
+topic-tags: introduction
 discoiquuid: 3bf2ca75-0d68-489d-bd1c-1d4fd730c61a
-mwpw-migration-script-version: 2017-10-12T21 46 58,665-0400
+mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 1e3df6159b48da27460f3ad95c22c13d025b1a72
+source-git-commit: 6de5ed20e4463c0c2e804e24cb853336229a7c1f
 
 ---
 
@@ -48,7 +48,7 @@ HTL non ha davvero limiti rispetto a JSP nel senso che ciò che può essere fatt
 No, ma come mostrato nella sezione [Caricamento delle librerie](getting-started.md#loading-client-libraries) client, le istruzioni di [modello e di chiamata](block-statements.md#template-call) offrono un pattern simile.
 
 **È possibile estendere le funzioni HTL su un progetto AEM?**
-**No, ma come mostrato nella sezione [Caricamento delle librerie](getting-started.md#loading-client-libraries) client, le istruzioni di [modello e chiamata](block-statements.md#template-call) offrono un pattern simile.
+No, ma come mostrato nella sezione [Caricamento delle librerie](getting-started.md#loading-client-libraries) client, le istruzioni di [modello e di chiamata](block-statements.md#template-call) offrono un pattern simile.
 No, non possono. HTL dispone di potenti meccanismi di estensione per il riutilizzo della logica ( [Use-API](getting-started.md#use-api-for-accessing-logic) ) e della marcatura (le istruzioni di [modello e di chiamata](block-statements.md#template-call) ), che possono essere utilizzati per modulare il codice dei progetti.
 
 **Quali sono i principali vantaggi di HTL rispetto a JSP?**
@@ -417,7 +417,7 @@ Come mostrato sopra, la marcatura che verrà inclusa nell' **`script`** elemento
 
 Una tecnica più moderna, tuttavia, sarebbe utilizzare l' **`template`** elemento HTML, in quanto il vantaggio sarebbe che non è necessario isolare il contenuto dei modelli in file separati.
 
-**Ulteriori informazioni:**
+**Articolo successivo:**
 
 * [Lingua](expression-language.md) espressione - per apprendere in dettaglio cosa si può fare all'interno delle espressioni HTL.
 * [Blocca istruzioni](block-statements.md) - per scoprire tutte le istruzioni di blocco disponibili in HTL e come utilizzarle.
