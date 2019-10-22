@@ -1,22 +1,22 @@
 ---
-title: HTL Java Use-API
-seo-title: HTL Java Use-API
+title: API di utilizzo Java HTL
+seo-title: API di utilizzo Java HTL
 description: 'Java Use-API per HTML Template Language (HTL) abilita un file HTL per accedere a metodi helper in una classe Java personalizzata. '
 seo-description: 'Java Use-API per HTML Template Language (HTL) abilita un file HTL per accedere a metodi helper in una classe Java personalizzata. '
 uuid: b340f8f7-a193-45c8-aa39-5c6e2c0194ea
-contentOwner: Utente
+contentOwner: User
 products: SG_EXPERIENCEMANAGER/HTL
 topic-tags: html-template-language
-content-type: riferimento
+content-type: reference
 discoiquuid: 126ebc9d-5f7b-47a4-aea2-c8840d34864c
-mwpw-migration-script-version: 2017-10-12T21 46 58,665-0400
+mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 48f09cfbdc5ef0bc5b951de1444ce40ea53dc07f
+source-git-commit: 6de5ed20e4463c0c2e804e24cb853336229a7c1f
 
 ---
 
 
-# HTL Java Use-API{#htl-java-use-api}
+# API di utilizzo Java HTL{#htl-java-use-api}
 
 L'HTML Template Language (HTL) Java Use-API consente a un file HTL di accedere ai metodi helper in una classe Java personalizzata. Questo consente di incorporare nel codice Java tutte le logiche aziendali complesse, mentre il codice HTL si occupa solo della produzione di markup diretti.
 
@@ -45,7 +45,7 @@ Per eseguire il rendering di questo componente è inoltre necessario aggiungere 
 }
 ```
 
-Quando si accede a questo contenuto, viene eseguito il file HTL. Nel codice HTL utilizziamo l'oggetto contestuale **`properties`**per accedere alla risorsa corrente `title` `description` e visualizzarla. The output HTML will be:
+Quando si accede a questo contenuto, viene eseguito il file HTL. Nel codice HTL utilizziamo l’oggetto contestuale **`properties`** per accedere alla risorsa corrente `title` `description` e visualizzarla. L'HTML di output sarà:
 
 ### `view-source:http://localhost:4502/content/my-example.html` {#view-source-http-localhost-content-my-example-html}
 
@@ -56,15 +56,15 @@ Quando si accede a questo contenuto, viene eseguito il file HTL. Nel codice HTL 
 </div>
 ```
 
-### Adding a Use-Class {#adding-a-use-class}
+### Aggiunta di una classe d'uso {#adding-a-use-class}
 
-The **info** component as it stands does not need a use-class to perform its (very simple) function. There are cases, however, where you need to do things that cannot be done in HTL and so you need a use-class. But keep in mind the following:
+Il componente **info** così com'è non ha bisogno di una classe use per eseguire la sua funzione (molto semplice). Ci sono tuttavia dei casi in cui è necessario fare cose che non possono essere fatte in HTL e quindi è necessario un use-class. Tenete presente quanto segue:
 
 >[!NOTE]
 >
->*A use-class should only be used when something cannot be done in HTL alone.*
+>*Utilizzare una classe use solo quando non è possibile eseguire operazioni in HTL.*
 
-For example, suppose that you want the  component to display the  and  properties of the resource, but all in lowercase. `info``title`**`description`** Since HTL does not have a method for lowercasing strings, you will need a use-class. We can do this by adding a Java use-class and changing the  as follows:**`info.html`**
+Ad esempio, se desiderate che il `info` componente visualizzi le `title` e **`description`** le proprietà della risorsa, il tutto in lettere minuscole. Poiché HTL non dispone di un metodo per le stringhe di tipo minuscolo, sarà necessario utilizzare la classe. A tal fine, è possibile aggiungere una classe d'uso Java e modificare le **`info.html`** seguenti impostazioni:
 
 ### `/apps/my-example/component/info/info.html` {#apps-my-example-component-info-info-html-1}
 
@@ -102,13 +102,13 @@ public class Info extends WCMUsePojo {
 }
 ```
 
-In the following sections we walk through the different parts of the code.
+Nelle sezioni che seguono passiamo attraverso le diverse parti del codice.
 
-### Local vs Bundle Java Class {#local-vs-bundle-java-class}
+### Classe Java locale e Bundle {#local-vs-bundle-java-class}
 
 Java use-class può essere installato in due modi: **locale** o **bundle**. *In questo esempio viene utilizzata un'installazione locale.*
 
-In a local install, the Java source file is placed alongside the HTL file, in the same repository folder. L'origine viene compilata automaticamente su richiesta. Non è richiesta alcuna fase di compilazione o di imballaggio separata.
+In un’installazione locale, il file di origine Java viene posizionato accanto al file HTL, nella stessa cartella del repository. L'origine viene compilata automaticamente su richiesta. Non è richiesta alcuna fase di compilazione o di imballaggio separata.
 
 In un’installazione bundle, la classe Java deve essere compilata e distribuita all’interno di un bundle OSGi utilizzando il meccanismo di distribuzione standard AEM bundle (consultate [Bundled Java Class](#bundled-java-class)).
 
@@ -144,7 +144,7 @@ public class Info extends WCMUsePojo {
 
 ### Estensione `WCMUsePojo`{#extending-wcmusepojo}
 
-While there are number of ways of incorporating a Java class with HTL (see Alternatives to ), the simplest is to extend the  class:`WCMUsePojo``WCMUsePojo`
+Mentre esistono diversi modi per incorporare una classe Java con HTL (vedere Alternative a `WCMUsePojo`), il più semplice è quello di estendere la `WCMUsePojo` classe:
 
 #### `/apps/my-example/component/info/Info.java` {#apps-my-example-component-info-info-java-2}
 
@@ -159,7 +159,7 @@ public class Info extends WCMUsePojo {
 }
 ```
 
-### Initializing the class {#initializing-the-class}
+### Inizializzazione della classe {#initializing-the-class}
 
 Quando use-class viene esteso da **`WCMUsePojo`**, l'inizializzazione viene eseguita ignorando il **`activate`** metodo:
 
@@ -213,7 +213,7 @@ In alternativa, è possibile accedere direttamente agli oggetti contestuali di u
 | [SlingHttpServletResponse](https://helpx.adobe.com/experience-manager/6-2/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) | [getResponse()](https://helpx.adobe.com/experience-manager/6-2/sites/developing/using/reference-materials/javadoc/com/adobe/cq/sightly/WCMUse.html#getResponse()) |
 | [SlingScriptHelper](https://helpx.adobe.com/experience-manager/6-2/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/scripting/SlingScriptHelper.html) | [getSlingScriptHelper()](https://helpx.adobe.com/experience-manager/6-2/sites/developing/using/reference-materials/javadoc/com/adobe/cq/sightly/WCMUse.html#getSlingScriptHelper()) |
 
-### Getter methods {#getter-methods}
+### Metodi Getter {#getter-methods}
 
 Una volta inizializzata la classe use, il file HTL viene eseguito. In questa fase HTL esegue in genere il pulling dello stato di varie variabili membro della classe use ed eseguirà il rendering per la presentazione.
 
@@ -302,9 +302,9 @@ In questa sezione presenteremo altre funzioni che vanno oltre il semplice esempi
 * Classe di utilizzo Java in bundle.
 * Alternative a `WCMUsePojo`
 
-### Passing Parameters {#passing-parameters}
+### Trasmissione parametri {#passing-parameters}
 
-I parametri possono essere passati a una classe use al momento dell'inizializzazione. For example, we could do something like this:
+I parametri possono essere passati a una classe use al momento dell'inizializzazione. Per esempio, potremmo fare qualcosa del genere:
 
 ### `/content/my-example/component/info/info.html` {#content-my-example-component-info-info-html}
 
@@ -316,7 +316,7 @@ I parametri possono essere passati a una classe use al momento dell'inizializzaz
 </div>
 ```
 
-Here we are passing a parameter called . **`text`** use-class quindi aggiorna la stringa recuperata e visualizza il risultato con `info.upperCaseText`. Di seguito è riportata la classe di utilizzo corretta:
+Qui stiamo passando un parametro chiamato **`text`**. use-class quindi aggiorna la stringa recuperata e visualizza il risultato con `info.upperCaseText`. Di seguito è riportata la classe di utilizzo corretta:
 
 ### `/apps/my-example/component/info/Info.java` {#apps-my-example-component-info-info-java-5}
 
@@ -371,7 +371,7 @@ Il motivo è che la classe use avrà sempre accesso allo stesso contesto di esec
 >
 >Il passaggio di un parametro a una classe use deve essere eseguito solo quando la classe use viene utilizzata in un file modello **di tipo** dati che viene chiamato da un altro file HTL con parametri che devono essere trasmessi.
 
-Ad esempio, creiamo un `data-sly-template` file separato con il nostro esempio esistente. Chiameremo il nuovo file `extra.html`. It contains a  block called :**`data-sly-template`****`extra`**
+Ad esempio, creiamo un `data-sly-template` file separato con il nostro esempio esistente. Chiameremo il nuovo file `extra.html`. Contiene un **`data-sly-template`** blocco denominato **`extra`**:
 
 ### `/apps/my-example/component/info/extra.html` {#apps-my-example-component-info-extra-html}
 
@@ -612,10 +612,10 @@ Per accedere alla risorsa dall'interno di HTL, potete dichiarare ` [com.day.cq.d
 </div>
 ```
 
-L' `data-sly-use` istruzione indirizza HTL per adattare la corrente **`Resource`** a un **`Asset`** e gli dà il nome locale **`asset`**. Quindi, chiama il **`getMimeType`** metodo di `Asset` utilizzo della abbreviazione getter HTL: `asset.mimeType`.
+L' `data-sly-use` istruzione indirizza HTL per adattare la corrente **`Resource`** a un **`Asset`** e gli dà il nome locale **`asset`**. Quindi chiama il **`getMimeType`** metodo di `Asset` utilizzo della abbreviazione getter HTL: `asset.mimeType`.
 
 ### Adattabile da richiesta {#adaptable-from-request}
 
 È inoltre possibile applicare come classe use qualsiasi classe adattabile da **` [org.apache.sling.api.SlingHttpServletRequest](https://helpx.adobe.com/experience-manager/6-2/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)`**
 
-Come nel caso precedente di un adattatore use-class da `Resource`, nell'istruzione [`SlingHttpServletRequest`](https://helpx.adobe.com/experience-manager/6-2/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) `data-sly-use` è possibile specificare un adattatore use-class da. Al momento dell'esecuzione, la richiesta corrente verrà adattata alla classe specificata e l'oggetto risultante sarà reso disponibile all'interno di H
+Come nel caso precedente di un adattatore use-class da `Resource`, nell'istruzione [`SlingHttpServletRequest`](https://helpx.adobe.com/experience-manager/6-2/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) `data-sly-use` è possibile specificare un adattatore use-class da. Al momento dell'esecuzione, la richiesta corrente verrà adattata alla classe specificata e l'oggetto risultante sarà reso disponibile all'interno di HTL.
