@@ -1,22 +1,22 @@
 ---
-title: HTL Expression Language
-seo-title: HTL Expression Language
+title: Linguaggio delle espressioni HTL
+seo-title: Linguaggio delle espressioni HTL
 description: Il linguaggio HTML Template Language utilizza un linguaggio di espressione per accedere alle strutture di dati che forniscono gli elementi dinamici dell'output HTML.
 seo-description: 'Il linguaggio HTML Template Language utilizza un linguaggio di espressione per accedere alle strutture di dati che forniscono gli elementi dinamici dell''output HTML. '
 uuid: 38b4a259-03b5-4847-91c6-e20377600070
-contentOwner: Utente
+contentOwner: User
 products: SG_EXPERIENCEMANAGER/HTL
 topic-tags: html-template-language
-content-type: riferimento
+content-type: reference
 discoiquuid: 9ba37ca0-f318-48b0-a791-a944a72502ed
-mwpw-migration-script-version: 2017-10-12T21 46 58,665-0400
+mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
 translation-type: tm+mt
-source-git-commit: 84ed515309831fe413abf317d8739f2bba79afdb
+source-git-commit: 6de5ed20e4463c0c2e804e24cb853336229a7c1f
 
 ---
 
 
-# HTL Expression Language {#htl-expression-language}
+# Linguaggio delle espressioni HTL {#htl-expression-language}
 
 Il linguaggio HTML Template Language utilizza un linguaggio di espressione per accedere alle strutture di dati che forniscono gli elementi dinamici dell'output HTML. Queste espressioni sono delimitate da caratteri `${` e `}`. Per evitare il formato HTML non corretto, le espressioni possono essere utilizzate solo nei valori di attributo, nel contenuto di elementi o nei commenti.
 
@@ -45,8 +45,10 @@ Senza dover specificare nulla, HTL fornisce l'accesso a tutti gli oggetti che er
 
 Esistono due modi per accedere alle proprietà delle variabili, con una notazione del punto o con una notazione tra parentesi:
 
-`${currentPage.title}  
-${currentPage['title']} or ${currentPage["title"]}`
+```
+${currentPage.title}  
+${currentPage['title']} or ${currentPage["title"]}
+```
 
 La notazione del punto più semplice dovrebbe essere preferita per la maggior parte dei casi e la notazione tra parentesi deve essere utilizzata per accedere alle proprietà che contengono caratteri di identificazione non validi o per accedere alle proprietà in modo dinamico. I due capitoli seguenti illustreranno in dettaglio questi due casi.
 
@@ -222,7 +224,7 @@ Questo operatore può essere utilizzato per verificare se si applica una delle d
 
 Poiché l'operatore OR logico restituisce la prima variabile che è vera, può essere utilizzato anche per fornire valori di fallback.
 
-vengono visualizzati in modo condizionale gli attributi HTML, in quanto HTL rimuove gli attributi con valori impostati da espressioni che corrispondono a false o a una stringa vuota. Quindi l'esempio seguente visualizzerà **`properties.jcr:`**title se esiste e non è vuoto, altrimenti torna a essere visualizzato **`properties.jcr:description`** se esiste e non è vuoto, altrimenti verrà visualizzato il messaggio "nessun titolo o descrizione fornito":
+vengono visualizzati in modo condizionale gli attributi HTML, in quanto HTL rimuove gli attributi con valori impostati da espressioni che corrispondono a false o a una stringa vuota. L'esempio seguente mostra **`properties.jcr:`** il titolo, se esiste e non è vuoto, altrimenti torna a essere visualizzato **`properties.jcr:description`** se esiste e non è vuoto, altrimenti viene visualizzato il messaggio "nessun titolo o descrizione fornito":
 
 ```xml
 <p>${properties.jcr:title || properties.jcr:description || "no title or description provided"}</p>
