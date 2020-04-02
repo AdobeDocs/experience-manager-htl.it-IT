@@ -1,5 +1,5 @@
 ---
-source-git-commit: f09b2268dc4745a8c2e3c53bb20fa3d35f6a7c2b
+source-git-commit: c84f8d43494965874c2fba8c005d355237580401
 translation-type: tm+mt
 
 ---
@@ -45,4 +45,4 @@ I responsabili del progetto che non seguono o non applicano in buona fede il Cod
 
 ## Attribuzione
 
-Il presente Codice di condotta è adattato dal Patto [per i collaboratori](https://contributor-covenant.org), versione 1.4, disponibile all&#39;indirizzo [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Il presente Codice di condotta è adattato dal Patto [per i collaboratori](https://contributor-covenant.org), versione 1.4, disponibile all&#39;indirizzo [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
