@@ -1,44 +1,60 @@
 ---
-title: HTL JavaScript Use-API
-seo-title: HTL JavaScript Use-API
-description: Il linguaggio HTML Template Language - HTL - JavaScript Use-API consente a un file HTL di accedere al codice helper scritto in JavaScript.
-seo-description: Il linguaggio HTML Template Language - HTL - JavaScript Use-API consente a un file HTL di accedere al codice helper scritto in JavaScript.
-uuid: 7ab34b10-30ac-44d6-926b-0234f52e5541
-contentOwner: Utente
-products: SG_EXPERIENCEMANAGER/HTL
-topic-tags: html-template-language
-content-type: riferimento
-discoiquuid: 18871af8-e44b-4eec-a483-fcc765dae58f
-mwpw-migration-script-version: 2017-10-12T21 46 58,665-0400
+title: API di utilizzo JavaScript HTL
+description: HTML Template Language - HTL - JavaScript Use-API consente a un file HTL di accedere al codice helper scritto in JavaScript.
 translation-type: tm+mt
-source-git-commit: bd1962e25d152be4f1608d0a83d8d5b3e728b4aa
+source-git-commit: ee712ef61018b5e05ea052484e2a9a6b12e6c5c8
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 2%
 
 ---
 
 
-# HTL JavaScript Use-API {#htl-javascript-use-api}
+# API di utilizzo JavaScript HTL {#htl-javascript-use-api}
 
-L'API Use-API JavaScript (HTL, HTML Template Language) JavaScript consente a un file HTL di accedere al codice helper scritto in JavaScript. Questo consente di incorporare nel codice JavaScript tutta la complessa logica aziendale, mentre il codice HTL si occupa solo della produzione di markup diretti.
+L&#39;API Use-API JavaScript (HTL, HTML Template Language) JavaScript consente a un file HTL di accedere al codice helper scritto in JavaScript. Questo consente di incorporare nel codice JavaScript tutte le complesse logiche aziendali, mentre il codice HTL si occupa solo della produzione di markup diretti.
+
+Vengono utilizzate le seguenti convenzioni.
+
+```javascript
+/**
+ * In the following example '/libs/dep1.js' and 'dep2.js' are optional
+ * dependencies needed for this script's execution. Dependencies can
+ * be specified using an absolute path or a relative path to this
+ * script's own path.
+ *
+ * If no dependencies are needed the dependencies array can be omitted.
+ */
+use(['dep1.js', 'dep2.js'], function (Dep1, Dep2) {
+    // implement processing
+  
+    // define this Use object's behavior
+    return {
+        propertyName: propertyValue
+        functionName: function () {}
+    }
+});
+```
 
 ## Esempio semplice {#a-simple-example}
 
-Definiamo un componente, `info`, situato in
+Definiamo un componente, `info`, che si trova in
 
-**`/apps/my-example/components/info`**
+`/apps/my-example/components/info`
 
 Contiene due file:
 
 * **`info.js`**: un file JavaScript che definisce la classe use.
-* `info.html`: un file HTL che definisce il componente `info`. Questo codice utilizzerà la funzionalità di `info.js` tramite use-API.
+* **`info.html`**: un file HTL che definisce il componente `info`. Questo codice utilizzerà la funzionalità di `info.js` tramite use-API.
 
 ### /apps/my-example/component/info/info.js {#apps-my-example-component-info-info-js}
 
 ```java
 "use strict";
 use(function () {
-    var info = {};    
+    var info = {};
     info.title = resource.properties["title"];
-    info.description = resource.properties["description"];    
+    info.description = resource.properties["description"];
     return info;
 });
 ```
@@ -52,9 +68,9 @@ use(function () {
 </div>
 ```
 
-Inoltre, viene creato un nodo di contenuto che utilizza il **`info`** componente in
+Inoltre, viene creato un nodo di contenuto che utilizza il `info` componente in
 
-**`/content/my-example`**, con proprietà:
+`/content/my-example`, con proprietà:
 
 * `sling:resourceType = "my-example/component/info"`
 * `title = "My Example"`
@@ -72,14 +88,14 @@ Di seguito è riportata la struttura del repository risultante:
         "info": {
           "info.html": {
             ...
-          }, 
+          },
           "info.js": {
             ...
           }
         }
       }
     }
- },     
+ },
  "content": {
     "my-example": {
       "sling:resourceType": "my-example/component/info",
@@ -99,18 +115,18 @@ Considera il seguente modello di componente:
 </section>
 ```
 
-La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato ****** server, situato in un `component.js` file accanto al modello:
+La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, situato in un `component.js` file accanto al modello:
 
-```
+```javascript
 use(function () {
     var Constants = {
         DESCRIPTION_PROP: "jcr:description",
         DESCRIPTION_LENGTH: 50
     };
- 
+
     var title = currentPage.getNavigationTitle() || currentPage.getTitle() || currentPage.getName();
     var description = properties.get(Constants.DESCRIPTION_PROP, "").substr(0, Constants.DESCRIPTION_LENGTH);
- 
+
     return {
         title: title,
         description: description
@@ -124,16 +140,16 @@ Questo cerca di prendere la descrizione `title` da origini diverse e ritagliarla
 
 Immaginiamo di avere una classe di utilità già dotata di funzioni intelligenti, come la logica di default per il titolo di navigazione o che taglia bene una stringa a una certa lunghezza:
 
-```
+```javascript
 use(['../utils/MyUtils.js'], function (utils) {
     var Constants = {
         DESCRIPTION_PROP: "jcr:description",
         DESCRIPTION_LENGTH: 50
     };
- 
+
     var title = utils.getNavigationTitle(currentPage);
     var description = properties.get(Constants.DESCRIPTION_PROP, "").substr(0, Constants.DESCRIPTION_LENGTH);
- 
+
     return {
         title: title,
         description: description
@@ -145,24 +161,24 @@ use(['../utils/MyUtils.js'], function (utils) {
 
 Il pattern di dipendenza può essere utilizzato anche per estendere la logica di un altro componente (che in genere corrisponde a quella `sling:resourceSuperType` del componente corrente).
 
-Immaginate che il componente principale fornisca già l' `title`, e vogliamo aggiungere **`description`** anche:
+Immaginate che il componente principale fornisca già l&#39; `title`, e vogliamo aggiungere `description` anche:
 
-```
+```javascript
 use(['../parent-component/parent-component.js'], function (component) {
     var Constants = {
         DESCRIPTION_PROP: "jcr:description",
         DESCRIPTION_LENGTH: 50
     };
- 
+
     component.description = utils.shortenString(properties.get(Constants.DESCRIPTION_PROP, ""), Constants.DESCRIPTION_LENGTH);
- 
+
     return component;
 });
 ```
 
 ## Trasmissione di parametri a un modello {#passing-parameters-to-a-template}
 
-Nel caso di **`data-sly-template`** istruzioni che possono essere indipendenti dai componenti, può essere utile trasmettere parametri all'API Use-API associata.
+Nel caso di `data-sly-template` istruzioni che possono essere indipendenti dai componenti, può essere utile trasmettere parametri all&#39;API Use-API associata.
 
 Nel nostro componente chiamiamo un modello che si trova in un file diverso:
 
@@ -179,17 +195,17 @@ Quindi questo è il modello che si trova in `template.html`:
 </template>
 ```
 
-La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato ****** server, situato in un `template.js` file accanto al file modello:
+La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, situato in un `template.js` file accanto al file modello:
 
-```
+```javascript
 use(function () {
     var Constants = {
         DESCRIPTION_PROP: "jcr:description"
     };
- 
+
     var title = this.page.getNavigationTitle() || this.page.getTitle() || this.page.getName();
     var description = this.page.getProperties().get(Constants.DESCRIPTION_PROP, "").substr(0, this.descriptionLength);
- 
+
     return {
         title: title,
         description: description
