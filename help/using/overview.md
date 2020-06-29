@@ -1,18 +1,11 @@
 ---
 title: Panoramica di HTL di AEM
-seo-title: Panoramica della documentazione tecnica di HTL di AEM.
 description: L’obiettivo di HTL supportato da AEM è offrire un framework web di livello Enterprise a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
-seo-description: In questo documento vengono illustrati i principi e lo scopo di HTL (HTML Template Language) supportato da Adobe Experience Manager. HTL è un framework web di livello Enterprise a produttività elevata che aumenta la sicurezza e consente agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
-uuid: 8f486325-0a1b-4186-a998-96fc0034c44a
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/HTL
-topic-tags: introduction
-content-type: reference
-discoiquuid: 8f779e08-94c7-43bc-a6e5-d81a9f818c5c
-mwpw-migration-script-version: 2017-10-12T21 46 58.665-0400
-skyline: verifica della replica
-translation-type: ht
-source-git-commit: 0aa1e905fd6d24f7031dceb0a8a89b56da198719
+translation-type: tm+mt
+source-git-commit: d3426d87dce09ac34ff1aca431ff2bfad2f7134a
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +14,7 @@ source-git-commit: 0aa1e905fd6d24f7031dceb0a8a89b56da198719
 
 L’obiettivo di HTL (HTML Template Language) supportato da Adobe Experience Manager (AEM) è offrire un framework web di livello Enterprise a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 
-HTML Template Language è stato introdotto con AEM 6.0 e sostituisce JSP (JavaServer Pages) come sistema di modelli lato server preferito e consigliato per HTML. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
+Il linguaggio HTML Template Language è stato introdotto con AEM 6.0 e sostituisce JSP (JavaServer Pages) come sistema di modelli lato server preferito e consigliato per HTML. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
 
 ## Maggiore sicurezza {#increased-security}
 
@@ -41,7 +34,7 @@ Una maggiore sicurezza, uno sviluppo semplificato e una migliore collaborazione 
 
 In concreto, considerando i dati registrati durante la reimplementazione del sito Adobe.com con HTML Template Language, si possono ridurre di circa il 25% sia i costi che la durata del progetto.
 
-![](assets/chlimage_1.png)
+![Aumento efficace e riduzione dei costi](assets/chlimage_1.png)
 
 Il diagramma precedente mostra potenziali miglioramenti in termini di efficienza resi possibili da HTL:
 
@@ -52,4 +45,3 @@ Il diagramma precedente mostra potenziali miglioramenti in termini di efficienza
 **Articolo successivo:**
 
 * [Guida introduttiva a HTML Template Language](getting-started.md)
-
