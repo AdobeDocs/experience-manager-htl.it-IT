@@ -2,9 +2,9 @@
 title: Linguaggio delle espressioni HTL
 description: Il linguaggio HTML Template Language utilizza un linguaggio di espressione per accedere alle strutture di dati che forniscono gli elementi dinamici dell'output HTML.
 translation-type: tm+mt
-source-git-commit: ee712ef61018b5e05ea052484e2a9a6b12e6c5c8
+source-git-commit: c7fa6014cd954a2ccb175e4c3a6be9deb83af890
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1854'
 ht-degree: 1%
 
 ---
@@ -48,17 +48,17 @@ La notazione del punto più semplice dovrebbe essere preferita per la maggior pa
 
 Le proprietà a cui si accede possono essere funzioni, ma gli argomenti di passaggio non sono supportati, quindi è possibile accedere solo alle funzioni che non prevedono l&#39;utilizzo di argomenti, come getters. Questa è una limitazione desiderata, che ha lo scopo di ridurre la quantità di logica incorporata nelle espressioni. Se necessario, l&#39; [`data-sly-use`](block-statements.md#use) istruzione può essere utilizzata per trasmettere i parametri alla logica.
 
-Anche nell&#39;esempio precedente è possibile accedere a funzioni Java getter come `getTitle()`, senza anteporre il carattere `get`e riducendo le maiuscole/minuscole del carattere che segue.
+Anche nell&#39;esempio precedente è possibile accedere a funzioni Java getter come `getTitle()`, senza anteporre il carattere `get`e riducendo le maiuscole e minuscole del carattere che segue.
 
 ### Caratteri di identificatore validi {#valid-identifier-characters}
 
 I nomi delle variabili, denominati identificatori, sono conformi a determinate regole. Devono iniziare con una lettera (`A`-`Z` e `a`-`z`), un carattere di sottolineatura (`_`) e i caratteri successivi possono anche essere cifre (`0`-`9`) o due punti (`:`). Le lettere Unicode, ad esempio `å` e `ü` non possono essere utilizzate negli identificatori.
 
-Dato che il carattere due punti (`:`) è comune nei nomi delle proprietà di AEM, è opportuno sottolineare che si tratta di un carattere identificatore valido:
+Poiché il carattere due punti (`:`) è comune nei nomi AEM proprietà, è opportuno sottolineare che si tratta di un carattere identificatore valido:
 
 `${properties.jcr:title}`
 
-La notazione tra parentesi può essere utilizzata per accedere a proprietà che contengono caratteri di identificazione non validi, come il carattere spazio nell&#39;esempio seguente:
+La notazione tra parentesi può essere utilizzata per accedere alle proprietà che contengono caratteri di identificazione non validi, come il carattere spazio nell&#39;esempio seguente:
 
 `${properties['my property']}`
 
@@ -194,7 +194,7 @@ Questo operatore può essere utilizzato per verificare se si applica una delle d
 
 Poiché l&#39;operatore OR logico restituisce la prima variabile che è vera, può essere utilizzato anche per fornire valori di fallback.
 
-vengono visualizzati in modo condizionale gli attributi HTML, in quanto HTL rimuove gli attributi con valori impostati da espressioni che corrispondono a false o a una stringa vuota. L&#39;esempio seguente mostra **`properties.jcr:`** il titolo, se esiste e non è vuoto, altrimenti torna a essere visualizzato **`properties.jcr:description`** se esiste e non è vuoto, altrimenti viene visualizzato il messaggio &quot;nessun titolo o descrizione fornito&quot;:
+Può essere utilizzato anche per visualizzare gli attributi HTML in modo condizionale, perché HTL rimuove gli attributi con valori impostati da espressioni che corrispondono a false o a una stringa vuota. L&#39;esempio seguente mostra **`properties.jcr:`** il titolo, se esiste e non è vuoto, altrimenti torna a essere visualizzato **`properties.jcr:description`** se esiste e non è vuoto, altrimenti viene visualizzato il messaggio &quot;nessun titolo o descrizione fornito&quot;:
 
 ```xml
 <p>${properties.jcr:title || properties.jcr:description || "no title or description provided"}</p>
@@ -427,7 +427,7 @@ La protezione Escape e XSS può essere disattivata:
 | `html` | Per una marcatura di output sicura | Filtra HTML per rispettare le regole dei criteri di anti-Samy, rimuovendo ciò che non corrisponde alle regole. |
 | `attribute` | Valore predefinito per i valori degli attributi | Codifica tutti i caratteri speciali HTML. |
 | `uri` | Per visualizzare collegamenti e percorsi Predefiniti per i valori degli attributi href e src | Convalida l&#39;URI per la scrittura come valore attributo href o src. Se la convalida non riesce, non viene generato alcun risultato. |
-| `number` | Per visualizzare i numeri | Convalida l&#39;URI per il contenitore di un numero intero, restituisce zero se la convalida non riesce. |
+| `number` | Per visualizzare i numeri | Convalida l&#39;URI per il contenitore di un numero intero, genera zero se la convalida non riesce. |
 | `attributeName` | Impostazione predefinita per gli attributi di tipo data-side quando si impostano i nomi degli attributi | Convalida il nome dell&#39;attributo, non genera nulla se la convalida non riesce. |
 | `elementName` | Impostazione predefinita per l’elemento data-sly | Convalida il nome dell&#39;elemento, non genera nulla se la convalida non riesce. |
 | `scriptToken` | Per identificatori JS, numeri letterali o stringhe letterali | Convalida il token JavaScript, non genera nulla se la convalida non riesce. |
