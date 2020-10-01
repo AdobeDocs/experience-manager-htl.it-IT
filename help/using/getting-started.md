@@ -2,9 +2,9 @@
 title: Guida introduttiva ad HTL
 description: HTL supportato da AEM sostituisce JSP come sistema di modelli lato server preferito e consigliato per HTML in AEM.
 translation-type: tm+mt
-source-git-commit: ee712ef61018b5e05ea052484e2a9a6b12e6c5c8
+source-git-commit: c7fa6014cd954a2ccb175e4c3a6be9deb83af890
 workflow-type: tm+mt
-source-wordcount: '2490'
+source-wordcount: '2471'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Guida introduttiva ad HTL {#getting-started-with-htl}
 
-HTML Template Language (HTL) supportato da  Adobe Experience Manager (AEM) è il sistema di modelli lato server preferito e consigliato per HTML in AEM. Sostituisce JSP (JavaServer Pages) come utilizzato nelle versioni precedenti di AEM.
+HTML Template Language (HTL) supportato da Adobe Experience Manager (AEM) è il sistema di modelli lato server preferito e consigliato per HTML in AEM. Si sostituisce a JSP (JavaServer Pages) come utilizzato nelle versioni precedenti di AEM.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ HTML Template Language (HTL) supportato da  Adobe Experience Manager (AEM) è il
 
 ## HTL su JSP {#htl-over-jsp}
 
-È consigliabile che i nuovi progetti AEM usino il linguaggio HTML Template Language, in quanto offre più vantaggi rispetto a JSP. Per i progetti esistenti, tuttavia, una migrazione ha senso solo se si stima che sarà meno impegno rispetto al mantenimento degli JSP esistenti per i prossimi anni.
+Per i nuovi progetti AEM è consigliabile utilizzare il linguaggio HTML Template Language, in quanto offre più vantaggi rispetto a JSP. Per i progetti esistenti, tuttavia, una migrazione ha senso solo se si stima che sarà meno impegno rispetto al mantenimento degli JSP esistenti per i prossimi anni.
 
 Ma passare a HTL non è necessariamente una scelta completa o nulla, perché i componenti scritti in HTL sono compatibili con i componenti scritti in JSP o ESP. Ciò significa che i progetti esistenti possono utilizzare senza problemi HTL per i nuovi componenti, mantenendo allo stesso tempo JSP per i componenti esistenti.
 
@@ -61,9 +61,9 @@ Di seguito è riportato un primo esempio, che potrebbe essere contenuto come in 
 
 È possibile distinguere due diversi tipi di sintassi:
 
-* **[Istruzioni](block-statements.md)**blocco - Per visualizzare l&#39;elemento **&lt;h1>**in modo condizionale, viene utilizzato un attributo di dati[`data-sly-test`](block-statements.md#test)HTML5. HTL fornisce più attributi di questo tipo, che consentono di associare il comportamento a qualsiasi elemento HTML, e tutti hanno il prefisso`data-sly`.
+* **[Istruzioni](block-statements.md)** blocco - Per visualizzare l&#39;elemento **&lt;h1>** in modo condizionale, viene utilizzato un attributo di dati [`data-sly-test`](block-statements.md#test) HTML5. HTL fornisce più attributi di questo tipo, che consentono di associare il comportamento a qualsiasi elemento HTML, e tutti hanno il prefisso `data-sly`.
 
-* **[Lingua](expression-language.md)**espressione - le espressioni HTL sono delimitate da caratteri`${`e`}`. In fase di esecuzione, queste espressioni vengono valutate e il relativo valore viene immesso nel flusso HTML in uscita.
+* **[Lingua](expression-language.md)** espressione - le espressioni HTL sono delimitate da caratteri `${` e `}`. In fase di esecuzione, queste espressioni vengono valutate e il relativo valore viene immesso nel flusso HTML in uscita.
 
 Le due pagine collegate sopra forniscono l&#39;elenco dettagliato delle funzioni disponibili per la sintassi.
 
@@ -91,7 +91,7 @@ restituirà un risultato simile al seguente HTML, ma solo se sono definite entra
 
 Una cosa da tenere presente è utilizzare l&#39;elemento SLY solo quando nessun elemento esistente poteva essere annotato con l&#39;istruzione block, perché gli elementi SLY dissuadono il valore offerto dal linguaggio per non modificare l&#39;HTML statico quando lo rende dinamico.
 
-Ad esempio, se l’esempio precedente era già stato incluso in un elemento DIV, l’elemento SLY aggiunto sarebbe abusivo:
+Ad esempio, se l&#39;esempio precedente era già incluso in un elemento DIV, l&#39;elemento SLY aggiunto sarebbe abusivo:
 
 ```xml
 <div>
@@ -110,12 +110,6 @@ e l&#39;elemento DIV potrebbe essere stato annotato con la condizione:
     <p>${properties.jcr:description}</p>
 </div>
 ```
-
->[!NOTE]
->
->L’elemento SLY è stato introdotto con AEM 6.1 o HTL 1.1.
->
->Prima di tale data, era necessario utilizzare l&#39; [`data-sly-unwrap`](block-statements.md) attributo.
 
 ### Commenti HTL {#htl-comments}
 
