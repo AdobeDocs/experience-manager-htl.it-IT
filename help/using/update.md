@@ -2,9 +2,9 @@
 title: Cos’è HTL
 description: 'HTML Template Language (HTL) è il sistema di modelli lato server preferito di Adobe Experience Manager per HTML. '
 translation-type: tm+mt
-source-git-commit: 7c37792729ca8caaf94ce6879ac02f241a571e44
+source-git-commit: c7fa6014cd954a2ccb175e4c3a6be9deb83af890
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '181'
 ht-degree: 12%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 12%
 
 # Cos’è HTL? {#what-is-htl}
 
-**Precedentemente Noto Come *Sightly ***
+**Precedentemente Noto Come *Sightly***
 
 Aggiornato: Agosto 2016
 
-HTML Template Language (altrimenti denominato HTL) è  sistema di modelli lato server preferito dal Adobe Experience Manager e consigliato per HTML. Come in tutti i sistemi HTML di modelli lato server, un file HTL definisce l&#39;output inviato al browser specificando l&#39;HTML stesso, alcune logiche di presentazione di base e le variabili da valutare in fase di esecuzione.
+HTML Template Language (altrimenti denominato HTL) è il sistema di modelli lato server preferito e consigliato da Adobe Experience Manager per HTML. Come in tutti i sistemi HTML di modelli lato server, un file HTL definisce l&#39;output inviato al browser specificando l&#39;HTML stesso, alcune logiche di presentazione di base e le variabili da valutare in fase di esecuzione.
 
-In AEM 6.0 e 6.1 HTL è stato definito **Sightly**. Adobe lo sta rinominando in &quot;HTML Template Language&quot; (Lingua modello HTML) per chiarire a cosa si riferisce la specifica e per allinearlo con le linee guida di denominazione di Adobe in generale. Questa modifica alla denominazione ha luogo da agosto 2016 e si applica alla versione 6.0 di AEM e successive.
+AEM 6.0 e 6.1 HTL è stato indicato come **Sightly**.  Adobe lo ha rinominato in &quot;HTML Template Language&quot; (Lingua modello HTML) per chiarire a cosa si riferisce la specifica e per allinearlo alle linee guida di denominazione  Adobe in generale. La modifica della denominazione è stata valida da agosto 2016 e si applica AEM versione 6.0 e successive.
 
 >[!NOTE]
 >
