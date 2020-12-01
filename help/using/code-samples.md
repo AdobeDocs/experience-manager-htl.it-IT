@@ -14,8 +14,8 @@ ht-degree: 11%
 
 Di seguito sono riportati alcuni esempi di codice per HTL:
 
-* [Esercitazione](https://docs.adobe.com/content/help/it-IT/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) WKND - Questa esercitazione illustra l’implementazione di un sito AEM per un brand di stile di vita fittizio, il WKND, e illustra argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo di componenti con  siti di Adobe Experience Manager, tutti implementati in HTL.
-* [Esempio](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) HTL TodoMVC - Implementazione AEM + HTL del famoso esercizio.
+* [Esercitazione](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)  WKND - Questa esercitazione illustra l’implementazione di un sito AEM per un brand di stile di vita fittizio il WKND e illustra argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo di componenti con  Adobe Experience Manager Sites, tutti implementati in HTL.
+* [HTL TodoMVC Esempio](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)  - Un AEM + HTL implementazione del famoso esercizio.
 
 Chiedete alle sessioni Expert:
 
