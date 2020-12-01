@@ -38,14 +38,14 @@ use(['dep1.js', 'dep2.js'], function (Dep1, Dep2) {
 
 ## Esempio semplice {#a-simple-example}
 
-Definiamo un componente, `info`, che si trova in
+Definiamo un componente, `info`, situato in
 
 `/apps/my-example/components/info`
 
 Contiene due file:
 
 * **`info.js`**: un file JavaScript che definisce la classe use.
-* **`info.html`**: un file HTL che definisce il componente `info`. Questo codice utilizzerà la funzionalità di `info.js` tramite use-API.
+* **`info.html`**: un file HTL che definisce il componente  `info`. Questo codice utilizzerà la funzionalità di `info.js` tramite l&#39;API use.
 
 ### /apps/my-example/component/info/info.js {#apps-my-example-component-info-info-js}
 
@@ -68,7 +68,7 @@ use(function () {
 </div>
 ```
 
-Inoltre, viene creato un nodo di contenuto che utilizza il `info` componente in
+Inoltre, viene creato un nodo di contenuto che utilizza il componente `info` in
 
 `/content/my-example`, con proprietà:
 
@@ -115,7 +115,7 @@ Considera il seguente modello di componente:
 </section>
 ```
 
-La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, situato in un `component.js` file accanto al modello:
+La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, situato in un file `component.js` accanto al modello:
 
 ```javascript
 use(function () {
@@ -134,7 +134,7 @@ use(function () {
 });
 ```
 
-Questo cerca di prendere la descrizione `title` da origini diverse e ritagliarla a 50 caratteri.
+Questo tentativo di prendere la `title` da origini diverse e ritagliare la descrizione a 50 caratteri.
 
 ## Dipendenze {#dependencies}
 
@@ -157,11 +157,11 @@ use(['../utils/MyUtils.js'], function (utils) {
 });
 ```
 
-## Estensione {#extending}
+## Estensione di {#extending}
 
-Il pattern di dipendenza può essere utilizzato anche per estendere la logica di un altro componente (che in genere corrisponde a quella `sling:resourceSuperType` del componente corrente).
+Il pattern di dipendenza può essere utilizzato anche per estendere la logica di un altro componente (che in genere corrisponde alla `sling:resourceSuperType` del componente corrente).
 
-Immaginate che il componente principale fornisca già l&#39; `title`, e vogliamo aggiungere `description` anche:
+Immaginate che il componente principale fornisca già il `title` e che si desideri aggiungere anche un `description`:
 
 ```javascript
 use(['../parent-component/parent-component.js'], function (component) {
@@ -178,7 +178,7 @@ use(['../parent-component/parent-component.js'], function (component) {
 
 ## Trasmissione di parametri a un modello {#passing-parameters-to-a-template}
 
-Nel caso di `data-sly-template` istruzioni che possono essere indipendenti dai componenti, può essere utile trasmettere parametri all&#39;API Use-API associata.
+Nel caso di istruzioni `data-sly-template` che possono essere indipendenti dai componenti, può essere utile trasmettere parametri all&#39;API Use associata.
 
 Nel nostro componente chiamiamo un modello che si trova in un file diverso:
 
@@ -195,7 +195,7 @@ Quindi questo è il modello che si trova in `template.html`:
 </template>
 ```
 
-La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, situato in un `template.js` file accanto al file modello:
+La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, situato in un file `template.js` accanto al file modello:
 
 ```javascript
 use(function () {
@@ -213,4 +213,4 @@ use(function () {
 });
 ```
 
-I parametri passati vengono impostati sulla `this` parola chiave.
+I parametri passati vengono impostati sulla parola chiave `this`.
