@@ -5,14 +5,14 @@ translation-type: tm+mt
 source-git-commit: ee712ef61018b5e05ea052484e2a9a6b12e6c5c8
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 
 # Oggetti globali di HTL {#htl-global-objects}
 
-Senza dover specificare nulla, HTL fornisce l&#39;accesso a tutti gli oggetti che erano comunemente disponibili in JSP dopo l&#39;inclusione `global.jsp`. Questi oggetti sono in aggiunta a quelli che possono essere introdotti tramite [Use-API](use-api.md).
+Senza specificare nulla, HTL fornisce l&#39;accesso a tutti gli oggetti comunemente disponibili in JSP dopo l&#39;inclusione di `global.jsp`. Questi oggetti sono in aggiunta a quelli che possono essere introdotti tramite [Use-API](use-api.md).
 
 ## Oggetti enumerabili {#enumerable-objects}
 
@@ -24,7 +24,7 @@ Questi oggetti consentono di accedere facilmente alle informazioni più utilizza
 | `pageProperties` | Elenco delle proprietà della pagina corrente. Sostenuto da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
 | `inheritedPageProperties` | Elenco delle proprietà di pagina ereditate della pagina corrente. Sostenuto da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
 
-## Oggetti Java {#java-backed-objects}
+## Oggetti Java supportati {#java-backed-objects}
 
 A ciascuno degli oggetti seguenti è associato il corrispondente oggetto Java.
 
@@ -56,9 +56,9 @@ Le variabili più utili nella tabella seguente sono evidenziate in grassetto.
 | **`wcmmode`** | `com.adobe.cq.sightly.SightlyWCMMode` |
 | `xssAPI` | `com.adobe.granite.xss.XSSAPI` |
 
-## Oggetti JavaScript {#javascript-backed-objects}
+## Oggetti JavaScript supportati {#javascript-backed-objects}
 
-È possibile supportare la logica HTL con JavaScript. Tuttavia, il metodo preferito o consigliato è quello di utilizzare [Sling Models.](https://sling.apache.org/documentation/bundles/models.html)
+È possibile supportare la logica HTL con JavaScript. Tuttavia, il metodo preferito o consigliato consiste nell&#39;utilizzare [Sling Models.](https://sling.apache.org/documentation/bundles/models.html)
 
 <!-- 
 
