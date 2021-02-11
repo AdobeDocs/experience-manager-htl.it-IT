@@ -2,7 +2,7 @@
 title: Adobe Experience Manager HTL Overview
 description: L’obiettivo di HTL supportato da AEM è offrire un framework web di livello Enterprise a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 translation-type: tm+mt
-source-git-commit: 88f6ad56a8d8f704b51aa84765de8da15e6c594e
+source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
 workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 94%
