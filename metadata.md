@@ -1,39 +1,38 @@
 ---
-product: Adobe Experience Manager
+solution: Experience Manager
+type: Documentazione
+product: adobe experience manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-htl.it-IT
 index: y
-solution-title: Informazioni e supporto per HTL
-solution-hub-url: https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/sites/home.html
-getting-started-title: Guida introduttiva allo sviluppo per AEM
-getting-started-url: https://docs.adobe.com/content/help/it-IT/experience-manager-cloud-service/core-concepts/home.html
-tutorials-title: Esercitazioni su AEM
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: d3426d87dce09ac34ff1aca431ff2bfad2f7134a
+source-git-commit: 5b88f6255534ef5af0958681c80303ab3da112b5
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 20%
+source-wordcount: '108'
+ht-degree: 6%
 
 ---
 
 
 # Metadati per uso interno
 
-I metadati nel sistema di creazione GitHub sono gerarchici ed è definito dai seguenti livelli crescenti di precedenti.
+I metadati nel sistema di authoring GitHub sono gerarchici e vengono definiti i seguenti livelli crescenti di precedenti.
 
 1. metadata.md
 1. ToC
 1. Articolo
 
-I metadati definiti nel file metadata.md si applicano all’intero repo, ma possono essere sostituiti a livello di AC e di articolo. L&#39;eventuale sostituzione dei metadati deve essere eseguita al livello più basso possibile.
+I metadati definiti nel file metadata.md si applicano all&#39;intero repository, ma possono essere ignorati a livello di AC e di articolo. Qualsiasi override dei metadati deve essere eseguito al livello più basso possibile.
 
-I metadati contenuti nel repo experience-manager-core-components.en sono il minimo richiesto.
+I metadati nell&#39;archivio experience-manager-core-components.en sono il minimo richiesto.
 
 metadata.md
 
 * `product`
 * `git-repo`
 * `index: y`
+
+Non più utilizzato:
+
 * `solution-title`
 * `solution-hub-url`
 * `getting-started-title`
@@ -52,4 +51,4 @@ Articolo
 * `description`
 * `index: n` (solo per le versioni precedenti dei componenti)
 
-Ulteriori informazioni sui metadati sono disponibili nella guida all’authoring [interna.](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
+Ulteriori informazioni sui metadati sono disponibili nella [guida all&#39;authoring interno.](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
