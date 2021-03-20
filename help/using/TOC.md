@@ -3,16 +3,19 @@ sub-product: Adobe Experience Manager HTL
 user-guide-title: Adobe Experience Manager HTL
 breadcrumb-title: Guida di HTL
 user-guide-description: Utilizza HTML Template Language (HTL) per creare un framework web a livello aziendale.
+feature-set: Experience Manager
+feature: Strumenti per gli sviluppatori
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 5d98000895461141ff7601c809b7085f89e6bb8b
+source-git-commit: 5b88f6255534ef5af0958681c80303ab3da112b5
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 100%
+source-wordcount: '71'
+ht-degree: 92%
 
 ---
 
 
-# Adobe Experience Manager HTL Aiuto {#using}
+# Guida di Adobe Experience Manager HTL {#using}
 
 + [Panoramica](overview.md)
 + Introduzione{#getting-started}
