@@ -1,25 +1,24 @@
 ---
-source-git-commit: 271c355ae56e16e309853b02b8ef09f2ff971a2e
-translation-type: tm+mt
+source-git-commit: 4940cb427833f3c0c72bccc6b1cd1737805be86f
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 100%
 
 ---
 # Licenza MIT
 
-© Copyright 2018 Adobe. All rights reserved.
+© Copyright 2021 Adobe. All rights reserved.
 
-L'autorizzazione è concessa gratuitamente a qualsiasi persona che riceve una copia
-di questo software e dei file associati della documentazione ("Software"), per gestire
-il Software senza limitazioni, compresi senza limitazioni i diritti
-per utilizzare, copiare, modificare, unire, pubblicare, distribuire, modificare, unire, pubblicare, distribuire, modificare, unire, pubblicare, distribuire, cancellare e/o vendere
-il Software in base alle condizioni seguenti:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-L'avviso di copyright riportato sopra e questo avviso di autorizzazione devono essere inclusi in tutte
-le copie o in parti sostanziali del Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NESSUNA CIRCOSTANZA GLI AUTORI O I PROPRIETARI DEL COPYRIGHT POTRANNO ESSERE RITENUTI RESPONSABILI DI QUALSIASI RECLAMO, DANNO O ALTRA RESPONSABILITÀ, SIA PER AZIONE CONTRATTUALE, COLPA O ALTRO, DERIVANTI O COMUNQUE CORRELATI AL SOFTWARE O ALL’UTILIZZO O AD ALTRE ATTIVITÀ RIGUARDANTI IL SOFTWARE.
