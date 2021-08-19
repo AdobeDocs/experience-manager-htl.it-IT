@@ -1,18 +1,17 @@
 ---
-title: Adobe Experience Manager HTL Overview
-description: L’obiettivo di HTL supportato da AEM è offrire un framework web di livello Enterprise a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
-translation-type: tm+mt
-source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
-workflow-type: tm+mt
+title: Panoramica su HTL di Adobe Experience Manager
+description: L’obiettivo di HTL supportato da AEM è offrire un framework web a livello aziendale a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
+exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
+source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
+workflow-type: ht
 source-wordcount: '667'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-
 # Panoramica {#overview}
 
-L’obiettivo di HTL (HTML Template Language) supportato da Adobe Experience Manager (AEM) è offrire un framework web di livello Enterprise a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
+L’obiettivo di HTL (HTML Template Language) supportato da Adobe Experience Manager (AEM) è offrire un framework web a livello aziendale a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 
 HTML Template Language è il sistema di modelli lato server preferito e consigliato per HTML in AEM. HTL è stato introdotto con AEM 6.0 e sostituisce JSP (JavaServer Pages). HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
 
@@ -26,7 +25,7 @@ Sebbene sia possibile ottenere lo stesso risultato con i linguaggi basati su mod
 
 HTML Template Language è facile da imparare e presenta funzioni appositamente limitate per garantirne la semplicità. Dispone inoltre di potenti meccanismi per strutturare la logica di markup e chiamata, applicando costantemente una rigida separazione delle questioni di markup e logica. HTL è un linguaggio HTML5 standard: utilizza, infatti, espressioni e attributi di dati per annotare il markup con il comportamento dinamico desiderato; questo significa che non interrompe la validità del markup, mantenendolo leggibile. Tieni presente che la valutazione delle espressioni e degli attributi dei dati viene eseguita interamente sul lato server e non sarà visibile sul client, dove è possibile utilizzare qualsiasi framework JavaScript senza creare interferenze.
 
-Queste funzionalità consentono agli sviluppatori HTML senza conoscenze Java e con poche conoscenze specifiche del prodotto di modificare i modelli HTL e far parte del team di sviluppo, semplificando in tal modo la collaborazione con gli sviluppatori Java. Inoltre, HTM consente agli sviluppatori Java di concentrarsi sul codice di back-end senza preoccuparsi dell’HTML.
+Queste funzionalità consentono agli sviluppatori HTML senza conoscenze Java e con poche conoscenze specifiche del prodotto di modificare i modelli HTL e far parte del team di sviluppo, semplificando in tal modo la collaborazione con gli sviluppatori Java. Inoltre, HTL consente agli sviluppatori Java di concentrarsi sul codice di back-end senza preoccuparsi dell’HTML.
 
 ## Costi ridotti {#reduced-costs}
 
@@ -34,7 +33,7 @@ Una maggiore sicurezza, uno sviluppo semplificato e una migliore collaborazione 
 
 In concreto, considerando i dati registrati durante la reimplementazione del sito Adobe.com con HTML Template Language, si possono ridurre di circa il 25% sia i costi che la durata del progetto.
 
-![Aumento efficace e riduzione dei costi](assets/chlimage_1.png)
+![Aumento dell’efficienza e riduzione dei costi](assets/chlimage_1.png)
 
 Il diagramma precedente mostra potenziali miglioramenti in termini di efficienza resi possibili da HTL:
 
