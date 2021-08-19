@@ -105,7 +105,7 @@ Inizializza un altro modello HTL che può quindi essere chiamato utilizzando `da
 >Per ulteriori informazioni su Use-API, consulta:
 >
 >* [Java Use-API](use-api-java.md)
-* [JavaScript Use-API](use-api-javascript.md)
+>* [JavaScript Use-API](use-api-javascript.md)
 
 
 #### data-sly-use con risorse {#data-sly-use-with-resources}
@@ -121,7 +121,8 @@ Esempio:
 ```
 
 >[!TIP]
-Vedi anche la sezione [Percorso non sempre richiesto.](#path-not-required)
+>
+>Vedi anche la sezione [Percorso non sempre richiesto.](#path-not-required)
 
 ### unwrap {#unwrap}
 
@@ -460,7 +461,8 @@ cssClassName='className'}"></article>
 ```
 
 >[!NOTE]
-AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono gli elementi. Per informazioni dettagliate, consulta [Tag di decorazione](https://docs.adobe.com/content/help/it/experience-manager-65/developing/components/decoration-tag.html) nella documentazione dei componenti di sviluppo.
+>
+>AEM offre una logica chiara e semplice che controlla i tag di decorazione che racchiudono gli elementi. Per informazioni dettagliate, consulta [Tag di decorazione](https://docs.adobe.com/content/help/it/experience-manager-65/developing/components/decoration-tag.html) nella documentazione dei componenti di sviluppo.
 
 ### include {#include}
 
