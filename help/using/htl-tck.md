@@ -1,23 +1,22 @@
 ---
-title: TCK di HTL
+title: TCK per HTL
 description: HTL è il sistema ufficiale di modelli lato server per AEM
-translation-type: tm+mt
-source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
-workflow-type: tm+mt
+exl-id: 31fb850f-2729-4cfc-affe-ee458adcd6c4
+source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
+# TCK per HTL {#the-htl-tck}
 
-# TCK di HTL {#the-htl-tck}
+## Cos’è TCK per HTL
 
-## Cos’è HTL TCK
+[HTML Template Language](overview.md), precedentemente noto come Sightly, è stato introdotto con [Adobe Experience Manager](http://www.adobe.com/it/solutions/web-experience-management.html) 6.0 e sostituisce JSP (Java Server Pages) come sistema di modelli lato server preferito e consigliato per HTML.
 
-Il [HTML Template Language](overview.md), precedentemente noto come Sightly, è stato introdotto con [Adobe Experience Manager](http://www.adobe.com/it/solutions/web-experience-management.html) 6.0 e sostituisce JSP (Java Server Pages) come sistema di modelli lato server preferito e consigliato per HTML.
-
-Il kit di compatibilità per la tecnologia HTML Template Language Technology Kit - HTL TCK - fornisce una suite di test intesi a certificare la conformità di un&#39;implementazione HTL con la [specifica di lingua ](https://github.com/adobe/htl-spec) ufficiale.
+Il Technology Compatibility Kit per HTML Template Language (TCK per HTL) fornisce una suite di test intesi a certificare la conformità di un’implementazione HTL alle [specifiche ufficiali del linguaggio](https://github.com/adobe/htl-spec).
 
 ## Ulteriori informazioni
 
-[Informazioni complete per Adobe Experience Manager HTL TCK sono disponibili qui](https://github.com/adobe/htl-tck)
+[Le informazioni complete per TCK per HTL di Adobe Experience Manager sono disponibili qui](https://github.com/adobe/htl-tck)
