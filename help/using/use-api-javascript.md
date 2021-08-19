@@ -1,18 +1,17 @@
 ---
-title: API di utilizzo JavaScript HTL
-description: HTML Template Language - HTL - JavaScript Use-API consente a un file HTL di accedere al codice helper scritto in JavaScript.
-translation-type: tm+mt
-source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
-workflow-type: tm+mt
+title: JavaScript Use-API per HTL
+description: JavaScript Use-API per HTML Template Language (HTL) consente a un file HTL di accedere a codice helper scritto in JavaScript.
+exl-id: e98bfbd5-fa64-48c7-bd14-477d4c5e1788
+source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
+# JavaScript Use-API per HTL {#htl-javascript-use-api}
 
-# API di utilizzo JavaScript HTL {#htl-javascript-use-api}
-
-L&#39;API Use-API JavaScript (HTL, HTML Template Language) JavaScript consente a un file HTL di accedere al codice helper scritto in JavaScript. Questo consente di incorporare nel codice JavaScript tutte le complesse logiche aziendali, mentre il codice HTL si occupa solo della produzione di markup diretti.
+JavaScript Use-API per HTML Template Language (HTL) consente a un file HTL di accedere a codice helper scritto in JavaScript. Questo consente di incapsulare nel codice JavaScript tutte le logiche di business complesse, mentre il codice HTL tratta solo la produzione di markup diretto.
 
 Vengono utilizzate le seguenti convenzioni.
 
@@ -36,16 +35,16 @@ use(['dep1.js', 'dep2.js'], function (Dep1, Dep2) {
 });
 ```
 
-## Esempio semplice {#a-simple-example}
+## Un esempio semplice {#a-simple-example}
 
-Definiamo un componente, `info`, situato in
+Definiamo un componente, `info`, che si trova in
 
 `/apps/my-example/components/info`
 
 Contiene due file:
 
 * **`info.js`**: un file JavaScript che definisce la classe use.
-* **`info.html`**: un file HTL che definisce il componente  `info`. Questo codice utilizzerà la funzionalità di `info.js` tramite l&#39;API use.
+* **`info.html`**: un file HTL che definisce il componente `info`. Questo codice utilizzerà le funzionalità di `info.js` tramite use-API.
 
 ### /apps/my-example/component/info/info.js {#apps-my-example-component-info-info-js}
 
@@ -68,17 +67,17 @@ use(function () {
 </div>
 ```
 
-Inoltre, viene creato un nodo di contenuto che utilizza il componente `info` in
+Creiamo anche un nodo di contenuto che utilizza il componente `info` in
 
-`/content/my-example`, con proprietà:
+`/content/my-example`, con le proprietà:
 
 * `sling:resourceType = "my-example/component/info"`
 * `title = "My Example"`
 * `description = "This is some example content."`
 
-Di seguito è riportata la struttura del repository risultante:
+Di seguito è illustrata la struttura di archivio risultante:
 
-### Struttura archivio {#repository-structure}
+### Struttura di archivio {#repository-structure}
 
 ```java
 {
@@ -115,7 +114,7 @@ Considera il seguente modello di componente:
 </section>
 ```
 
-La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, situato in un file `component.js` accanto al modello:
+La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, che si trova in un file `component.js` accanto al modello:
 
 ```javascript
 use(function () {
@@ -134,11 +133,11 @@ use(function () {
 });
 ```
 
-Questo tentativo di prendere la `title` da origini diverse e ritagliare la descrizione a 50 caratteri.
+Questo cerca di estrarre il `title` da diversi file di origine e riduce la descrizione a 50 caratteri.
 
 ## Dipendenze {#dependencies}
 
-Immaginiamo di avere una classe di utilità già dotata di funzioni intelligenti, come la logica di default per il titolo di navigazione o che taglia bene una stringa a una certa lunghezza:
+Immaginiamo di avere una classe di utilità già dotata di funzioni intelligenti, come la logica predefinita per il titolo di navigazione o la riduzione di una stringa a una determinata lunghezza:
 
 ```javascript
 use(['../utils/MyUtils.js'], function (utils) {
@@ -157,11 +156,11 @@ use(['../utils/MyUtils.js'], function (utils) {
 });
 ```
 
-## Estensione di {#extending}
+## Estensione {#extending}
 
-Il pattern di dipendenza può essere utilizzato anche per estendere la logica di un altro componente (che in genere corrisponde alla `sling:resourceSuperType` del componente corrente).
+Il pattern di dipendenza può essere utilizzato anche per estendere la logica di un altro componente (che in genere corrisponde a `sling:resourceSuperType` del componente corrente).
 
-Immaginate che il componente principale fornisca già il `title` e che si desideri aggiungere anche un `description`:
+Immagina che il componente principale fornisca già il `title` e si desideri aggiungere anche una `description`:
 
 ```javascript
 use(['../parent-component/parent-component.js'], function (component) {
@@ -178,9 +177,9 @@ use(['../parent-component/parent-component.js'], function (component) {
 
 ## Trasmissione di parametri a un modello {#passing-parameters-to-a-template}
 
-Nel caso di istruzioni `data-sly-template` che possono essere indipendenti dai componenti, può essere utile trasmettere parametri all&#39;API Use associata.
+Nel caso di istruzioni `data-sly-template` che possono essere indipendenti dai componenti, può essere utile trasmettere parametri all’use-API associata.
 
-Nel nostro componente chiamiamo un modello che si trova in un file diverso:
+Quindi nel nostro componente chiamiamo un modello che si trova in un file diverso:
 
 ```xml
 <section class="component-name" data-sly-use.tmpl="template.html" data-sly-call="${tmpl.templateName @ page=currentPage}"></section>
@@ -195,7 +194,7 @@ Quindi questo è il modello che si trova in `template.html`:
 </template>
 ```
 
-La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, situato in un file `template.js` accanto al file modello:
+La logica corrispondente può essere scritta utilizzando il seguente JavaScript lato server, che si trova in un file `template.js` accanto al file di modello:
 
 ```javascript
 use(function () {
@@ -213,4 +212,4 @@ use(function () {
 });
 ```
 
-I parametri passati vengono impostati sulla parola chiave `this`.
+I parametri trasmessi vengono impostati sulla parola chiave `this`.
