@@ -1,26 +1,25 @@
 ---
-title: API di utilizzo HTL
+title: Use-Api per HTL
 description: Sono disponibili due API per HTL - Java Use-API e Javascript Use-API
-translation-type: tm+mt
-source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
-workflow-type: tm+mt
+exl-id: 8f95707e-952c-4efe-a44e-9a1ad501605e
+source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
+# Use-Api per HTL {#htl-use-api}
 
-# API di utilizzo HTL {#htl-use-api}
+HTL incoraggia la separazione delle questioni non consentendo alla logica di business di mescolarsi con il markup. La logica di business può essere implementata tramite use-API.
 
-HTL incoraggia la separazione delle preoccupazioni, non consentendo logica di business di mischiarsi con il markup. La logica aziendale può essere implementata tramite l&#39;API Use.
-
-La tabella seguente fornisce una panoramica dei vantaggi e degli svantaggi di ciascuna API.
+La tabella seguente offre una panoramica dei vantaggi e degli svantaggi di ogni API.
 
 |  | **Java Use-API** | **JavaScript Use-API** |
 |--- |--- |--- |
-| **Vantaggi** | <ul><li>Più veloce</li><li>Può essere ispezionato con un debugger</li><li>Facile da testare</li></ul> | <ul><li>Può essere modificato da sviluppatori front-end</li><li>Si trova all’interno del componente, mantenendo la logica di visualizzazione di un componente vicina al modello corrispondente</li></ul> |
-| **Svantaggi** | <ul><li>Non può essere modificato da sviluppatori front-end</li></ul> | <ul><li>Lentezza</li><li>Nessun debugger (ancora)</li><li>Prova più rapida</li></ul> |
+| **Vantaggi** | <ul><li>Più veloce</li><li>Può essere esaminata con un debugger</li><li>Unit testing semplice</li></ul> | <ul><li>Può essere modificata da sviluppatori front-end</li><li>Si trova all’interno del componente, mantenendo la logica di visualizzazione di un componente vicina al modello corrispondente</li></ul> |
+| **Svantaggi** | <ul><li>Non può essere modificata da sviluppatori front-end</li></ul> | <ul><li>Più lenta</li><li>Nessun debugger (al momento)</li><li>Unit testing più complicato</li></ul> |
 
-Per i componenti della pagina, si consiglia di utilizzare un modello misto, in cui tutte le logiche del modello si trovano in Java, fornendo API chiare che siano agnostiche a qualsiasi cosa accada nella vista (cioè all&#39;interno dei componenti). AEM vengono forniti ottimi modelli predefiniti come Pagina o l&#39;API delle risorse, che dovrebbero essere in grado di coprire la maggior parte dei casi.
+Per i componenti di pagina, si consiglia di utilizzare un modello misto, in cui la logica del modello si trova in Java, fornendo API chiare e indipendenti da qualsiasi cosa accada nella visualizza (cioè all’interno dei componenti). AEM viene fornito con eccellenti modelli predefiniti come Pagina o API di risorsa che dovrebbero essere in grado di coprire la maggior parte dei casi.
 
-Tutte le logiche di visualizzazione specifiche per un componente devono essere inserite all’interno di tale componente come JavaScript, perché appartengono a tale componente.
+Tutta la logica di visualizzazione specifiche per un componente deve essere posizionata all’interno di tale componente come JavaScript, poiché appartiene a tale componente.
