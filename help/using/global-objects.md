@@ -1,36 +1,35 @@
 ---
 title: Oggetti globali di HTL
-description: Senza dover specificare nulla, HTL fornisce l'accesso a tutti gli oggetti che erano comunemente disponibili in JSP dopo l'inclusione di global.jsp.
-translation-type: tm+mt
-source-git-commit: f7e46aaac2a4b51d7fa131ef46692ba6be58d878
-workflow-type: tm+mt
+description: Senza dover specificare nulla, HTL fornisce l’accesso a tutti gli oggetti comunemente disponibili in JSP dopo aver incluso global.jsp.
+exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
+source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-
 # Oggetti globali di HTL {#htl-global-objects}
 
-Senza specificare nulla, HTL fornisce l&#39;accesso a tutti gli oggetti comunemente disponibili in JSP dopo l&#39;inclusione di `global.jsp`. Questi oggetti sono in aggiunta a quelli che possono essere introdotti tramite [Use-API](use-api.md).
+Senza dover specificare nulla, HTL fornisce l’accesso a tutti gli oggetti comunemente disponibili in JSP dopo aver incluso `global.jsp`. Questi oggetti sono in aggiunta a quelli che possono essere introdotti tramite [Use-API](use-api.md).
 
-## Oggetti enumerabili {#enumerable-objects}
+## Oggetti elencabili {#enumerable-objects}
 
-Questi oggetti consentono di accedere facilmente alle informazioni più utilizzate. Il contenuto è accessibile mediante la notazione del punto e può essere ripetuto tramite `data-sly-list` o `data-sly-repeat`.
+Questi oggetti consentono di accedere facilmente a informazioni di uso comune. Il loro contenuto è accessibile con la notazione del punto e può essere iterato tramite `data-sly-list` o `data-sly-repeat`.
 
-| Nome variabile | Descrizione |
+| Nome della variabile | Descrizione |
 |--- |--- |
-| `properties` | Elenco delle proprietà della risorsa corrente. Sostenuto da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
-| `pageProperties` | Elenco delle proprietà della pagina corrente. Sostenuto da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
-| `inheritedPageProperties` | Elenco delle proprietà di pagina ereditate della pagina corrente. Sostenuto da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
+| `properties` | Elenco delle proprietà della risorsa corrente. Supportato da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
+| `pageProperties` | Elenco delle proprietà della pagina corrente. Supportato da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
+| `inheritedPageProperties` | Elenco delle proprietà di pagina ereditate della pagina corrente. Supportato da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
 
-## Oggetti Java supportati {#java-backed-objects}
+## Oggetti supportati da Java {#java-backed-objects}
 
-A ciascuno degli oggetti seguenti è associato il corrispondente oggetto Java.
+Ciascuno dei seguenti oggetti viene supportato dal relativo oggetto Java.
 
 Le variabili più utili nella tabella seguente sono evidenziate in grassetto.
 
-| Nome variabile | Descrizione |
+| Nome della variabile | Descrizione |
 |---|---|
 | **`component`** | `com.day.cq.wcm.api.components.Component` |
 | `componentContext` | `com.day.cq.wcm.api.components.ComponentContext` |
@@ -56,9 +55,9 @@ Le variabili più utili nella tabella seguente sono evidenziate in grassetto.
 | **`wcmmode`** | `com.adobe.cq.sightly.SightlyWCMMode` |
 | `xssAPI` | `com.adobe.granite.xss.XSSAPI` |
 
-## Oggetti JavaScript supportati {#javascript-backed-objects}
+## Oggetti supportati da JavaScript {#javascript-backed-objects}
 
-È possibile supportare la logica HTL con JavaScript. Tuttavia, il metodo preferito o consigliato consiste nell&#39;utilizzare [Sling Models.](https://sling.apache.org/documentation/bundles/models.html)
+È possibile supportare la logica HTL con JavaScript. Tuttavia, il metodo preferito o consigliato è quello di utilizzare [modelli Sling.](https://sling.apache.org/documentation/bundles/models.html)
 
 <!-- 
 
