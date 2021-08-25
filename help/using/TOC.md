@@ -17,11 +17,11 @@ ht-degree: 100%
 # Guida a HTL di Adobe Experience Manager {#using}
 
 + [Panoramica](overview.md)
-+ Guida introduttiva{#getting-started}
++ Guida introduttiva {#getting-started}
    + [Cos’è HTL?](update.md)
    + [Guida introduttiva ad HTL](getting-started.md)
    + [Specifica HTL](htl-specification.md)
-+ HTML Template Language{#htl}
++ HTML Template Language {#htl}
    + [Oggetti globali di HTL](global-objects.md)
    + [Java Use-API per HTL](use-api-java.md)
    + [JavaScript Use-API per HTL](use-api-javascript.md)
