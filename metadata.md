@@ -4,26 +4,25 @@ type: Documentation
 product: adobe experience manager
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-htl.it-IT
 index: y
-translation-type: tm+mt
 source-git-commit: 5b88f6255534ef5af0958681c80303ab3da112b5
-workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 6%
+workflow-type: ht
+source-wordcount: '107'
+ht-degree: 100%
 
 ---
 
 
 # Metadati per uso interno
 
-I metadati nel sistema di authoring GitHub sono gerarchici e vengono definiti i seguenti livelli crescenti di precedenti.
+I metadati nel sistema di authoring GitHub sono gerarchici, in base ai seguenti livelli crescenti di precedenza.
 
 1. metadata.md
-1. ToC
+1. Sommario
 1. Articolo
 
-I metadati definiti nel file metadata.md si applicano all&#39;intero repository, ma possono essere ignorati a livello di AC e di articolo. Qualsiasi override dei metadati deve essere eseguito al livello più basso possibile.
+I metadati definiti nel file metadata.md si applicano all’intero archivio, ma possono essere ignorati a livello di sommario e articolo. Eventuali esclusioni dei metadati devono essere eseguite al livello più basso possibile.
 
-I metadati nell&#39;archivio experience-manager-core-components.en sono il minimo richiesto.
+I metadati nell’archivio experience-manager-core-components.en rappresentano il minimo richiesto.
 
 metadata.md
 
@@ -31,7 +30,7 @@ metadata.md
 * `git-repo`
 * `index: y`
 
-Non più utilizzato:
+Non più utilizzati:
 
 * `solution-title`
 * `solution-hub-url`
@@ -40,7 +39,7 @@ Non più utilizzato:
 * `tutorials-title`
 * `tutorials-url`
 
-ToCs
+Sommario
 
 * `sub-product`
 * `user-guide-title`
@@ -51,4 +50,4 @@ Articolo
 * `description`
 * `index: n` (solo per le versioni precedenti dei componenti)
 
-Ulteriori informazioni sui metadati sono disponibili nella [guida all&#39;authoring interno.](https://docs.adobe.com/help/en/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
+Ulteriori informazioni sui metadati sono disponibili nella [guida all’authoring interno.](https://docs.adobe.com/help/it/collaborative-doc-instructions/collaboration-guide/markdown/metadata.html#solution-metadata)
