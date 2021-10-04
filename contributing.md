@@ -1,7 +1,7 @@
 ---
-source-git-commit: fd7751869a45019e1492218df9cc7824ef507870
-workflow-type: ht
-source-wordcount: '533'
+source-git-commit: 89b9e89254f341e74f1a5a7b99735d2e69c8a91e
+workflow-type: tm+mt
+source-wordcount: '532'
 ht-degree: 100%
 
 ---
@@ -58,4 +58,4 @@ Anche se saremo lieti di accogliere ed esaminare qualsiasi contributo presentato
 
 ## Ulteriori informazioni
 
-Per ulteriori informazioni su come utilizzare la piattaforma di authoring GitHub, consulta la [Guida per i collaboratori alla documentazione di Adobe](https://docs.adobe.com/help/it-IT/contributor/contributor-guide/introduction.html).
+Per ulteriori informazioni su come utilizzare la piattaforma di authoring GitHub, consulta la [Guida per i collaboratori alla documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).

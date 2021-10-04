@@ -2,10 +2,10 @@
 title: Linguaggio di espressione HTL
 description: HTML Template Language utilizza un linguaggio di espressione per accedere alle strutture di dati che forniscono gli elementi dinamici dell’output HTML.
 exl-id: 57e3961b-8c84-4d56-a049-597c7b277448
-source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
-workflow-type: ht
-source-wordcount: '1854'
-ht-degree: 100%
+source-git-commit: 89b9e89254f341e74f1a5a7b99735d2e69c8a91e
+workflow-type: tm+mt
+source-wordcount: '1852'
+ht-degree: 99%
 
 ---
 
@@ -336,7 +336,7 @@ Gli esempi seguenti mostrano che è specificato per primo il formato, quindi il 
 
 ### Internazionalizzazione {#internationalization}
 
-Traduce la stringa nella lingua del file di *origine* corrente (vedi sotto), utilizzando il [dizionario](https://docs.adobe.com/content/help/it/experience-manager-65/developing/components/internationalization/i18n-translator.html) corrente. Se non viene trovata alcuna traduzione, viene utilizzata la stringa originale.
+Traduce la stringa nella lingua del file di *origine* corrente (vedi sotto), utilizzando il [dizionario](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/internationalization/i18n-translator.html) corrente. Se non viene trovata alcuna traduzione, viene utilizzata la stringa originale.
 
 ```xml
 ${'Page' @ i18n}
