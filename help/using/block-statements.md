@@ -1,11 +1,11 @@
 ---
-title: Cosa sono le istruzioni di blocco HTL?
-description: Informazioni sulle istruzioni di blocco HTL o HTL (HTML Template Language). Le istruzioni a blocchi sono attributi di dati personalizzati aggiunti direttamente a HTML esistente.
+title: Cosa sono le istruzioni del blocco HTL?
+description: Scopri cosa sono le istruzioni del blocco HTL o HTMLTemplate Language (HTL). Le istruzioni del blocco sono attributi di dati personalizzati aggiunti direttamente all’HTML esistente.
 exl-id: a517dcef-ab7a-4d4c-a1a9-2e57aad034f7
 source-git-commit: 79d299766da07dae001708b396b05c73cd70d4cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1563'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
