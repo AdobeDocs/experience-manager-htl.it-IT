@@ -1,11 +1,11 @@
 ---
-title: Panoramica su HTL di Adobe Experience Manager
-description: L’obiettivo di HTL supportato da AEM è offrire un framework web a livello aziendale a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
+title: Panoramica di HTL
+description: Scopri come AEM supporta HTL (HTML Template Language) per offrire un framework web a livello aziendale produttivo. HTL aumenta la sicurezza e consente agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
-source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
-workflow-type: ht
-source-wordcount: '667'
-ht-degree: 100%
+source-git-commit: 7b53eff0652f650ffb8caae0e69aa349b5c548eb
+workflow-type: tm+mt
+source-wordcount: '663'
+ht-degree: 95%
 
 ---
 

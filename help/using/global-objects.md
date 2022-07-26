@@ -1,11 +1,11 @@
 ---
-title: Oggetti globali di HTL
-description: Senza dover specificare nulla, HTL fornisce l’accesso a tutti gli oggetti comunemente disponibili in JSP dopo aver incluso global.jsp.
+title: Oggetti globali HTL
+description: Scopri gli oggetti enumerabili, gli oggetti basati su Java e gli oggetti basati su JavaScript. Trovare i nomi e le descrizioni delle variabili per questi oggetti globali HTL utilizzati in AEM.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
-source-git-commit: 8e70ee4921a7ea071ab7e06947824c371f4013d8
-workflow-type: ht
-source-wordcount: '220'
-ht-degree: 100%
+source-git-commit: 7b53eff0652f650ffb8caae0e69aa349b5c548eb
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 88%
 
 ---
 
@@ -20,8 +20,8 @@ Questi oggetti consentono di accedere facilmente a informazioni di uso comune. I
 | Nome della variabile | Descrizione |
 |--- |--- |
 | `properties` | Elenco delle proprietà della risorsa corrente. Supportato da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
-| `pageProperties` | Elenco delle proprietà della pagina corrente. Supportato da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
-| `inheritedPageProperties` | Elenco delle proprietà di pagina ereditate della pagina corrente. Supportato da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
+| `pageProperties` | Elenco delle proprietà della pagina corrente. Supportato da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
+| `inheritedPageProperties` | Elenco delle proprietà di pagina ereditate della pagina corrente. Supportato da [org.apache.sling.api.resource.ValueMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html) |
 
 ## Oggetti supportati da Java {#java-backed-objects}
 
