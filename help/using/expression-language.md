@@ -1,11 +1,11 @@
 ---
-title: Linguaggio delle espressioni HTL
-description: Scopri come utilizzare il linguaggio di espressione HTL in AEM. HTML Template Language utilizza un linguaggio di espressione per accedere alle strutture di dati che forniscono gli elementi dinamici dell’output HTML.
+title: Linguaggio di espressioni HTL
+description: Scopri come utilizzare il linguaggio di espressioni HTL in AEM. HTML Template Language utilizza un linguaggio di espressione per accedere alle strutture di dati che forniscono gli elementi dinamici dell’output HTML.
 exl-id: 57e3961b-8c84-4d56-a049-597c7b277448
 source-git-commit: 7b53eff0652f650ffb8caae0e69aa349b5c548eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1860'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
