@@ -1,11 +1,11 @@
 ---
-title: JavaScript Use-API per HTL
-description: Scopri in che modo l’API di utilizzo JavaScript per HTML Template Language (HTL) abilita un file HTL per accedere al codice helper scritto in JavaScript.
+title: HTL JavaScript Use-API
+description: Scopri come HTML template language (HTL) JavaScript Use-API consente a un file HTL di accedere al codice di supporto scritto in JavaScript.
 exl-id: e98bfbd5-fa64-48c7-bd14-477d4c5e1788
 source-git-commit: 7b53eff0652f650ffb8caae0e69aa349b5c548eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
