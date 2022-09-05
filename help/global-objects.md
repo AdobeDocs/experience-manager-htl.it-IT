@@ -3,9 +3,9 @@ title: Oggetti globali di HTL
 description: Scopri gli oggetti enumerabili, gli oggetti basati su Java e gli oggetti basati su JavaScript in HTL.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 source-git-commit: 5ab1275c984135fe946f36905bbc979cf19edd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Senza dover specificare nulla, HTL fornisce l’accesso a molti oggetti utili al
 
 ## Oggetti elencabili {#enumerable-objects}
 
-Questi oggetti consentono di accedere facilmente a informazioni di uso comune. Il loro contenuto è accessibile con la notazione del punto e può essere ripetuto tramite `data-sly-list` o `data-sly-repeat`.
+Questi oggetti consentono di accedere facilmente a informazioni di uso comune. Il loro contenuto è accessibile mediante notazione col punto e può essere iterato tramite `data-sly-list` o `data-sly-repeat`.
 
 | Nome della variabile | Descrizione | Supportato da |
 |--- |--- |--- |
