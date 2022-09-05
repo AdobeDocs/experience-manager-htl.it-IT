@@ -1,18 +1,18 @@
 ---
 title: Storia di HTL
-description: Per gli utenti di lunga data di AEM, questo documento fornisce lo sfondo su HTL, come sostituisce JSP e il cambiamento di nome da Sightly.
+description: Per gli utenti di lunga data di AEM, questo documento fornisce informazioni di base su HTL, su come esso sostituisce JSP e sul cambiamento di nome da Sightly.
 exl-id: 00985b35-2130-4946-959a-0a09a34a0f05
 source-git-commit: 5ab1275c984135fe946f36905bbc979cf19edd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 
 # Storia di HTL {#history-of-htl}
 
-Per gli utenti di lunga data di AEM, questo documento fornisce lo sfondo su HTL, come sostituisce JSP e il cambiamento di nome da Sightly.
+Per gli utenti di lunga data di AEM, questo documento fornisce informazioni di base su HTL, su come esso sostituisce JSP e sul cambiamento di nome da Sightly.
 
 ## Precedentemente noto come Sightly {#sightly}
 
@@ -33,19 +33,19 @@ Anche all’interno dello stesso componente, i file HTL possono essere utilizzat
 
 ## Domande frequenti  {#frequently-asked-questions}
 
-Queste sono alcune domande che vengono comunemente poste dagli sviluppatori esperti AEM nuovi di HTL.
+Queste sono alcune domande che vengono comunemente poste dagli sviluppatori esperti AEM che sono nuovi per HTL.
 
 ### HTL ha dei limiti che JSP non ha? {#limitations}
 
-HTL non ha assolutamente limiti rispetto a JSP, nel senso che ciò che può essere fatto con JSP dovrebbe essere praticabile anche con HTL. Tuttavia, HTL è di progettazione più rigoroso rispetto a JSP per diversi aspetti. Ciò che può essere ottenuto in un singolo file JSP, potrebbe essere necessario essere separato in una classe Java o in un file JavaScript per essere raggiungibile in HTL. Ma ciò è generalmente desiderato al fine di garantire una buona separazione delle questioni di logica e markup.
+HTL non ha assolutamente limiti rispetto a JSP, nel senso che ciò che può essere fatto con JSP dovrebbe essere praticabile anche con HTL. Tuttavia, HTL è per progettazione più rigido di JSP in diversi aspetti; ciò che può essere ottenuto in un singolo file JSP, potrebbe dover essere separato in una classe Java o un file JavaScript per essere realizzabile in HTL. Ma ciò è generalmente desiderato al fine di garantire una buona separazione delle questioni di logica e markup.
 
 ### HTL supporta le librerie di tag JSP? {#tag-libraries}
 
-No, ma come mostrato nella [Caricamento delle librerie client](getting-started.md#loading-client-libraries) Nella sezione del documento Guida introduttiva, le istruzioni modello e chiamata offrono un pattern simile.
+No, ma come mostrato nella sezione [Caricamento librerie client](getting-started.md#loading-client-libraries) del documento Guida introduttiva, le istruzioni di modello e chiamata offrono un pattern simile.
 
 ### È possibile estendere le funzioni HTL su un progetto AEM? {#extended}
 
-No, non è possibile. HTL dispone di potenti meccanismi di estensione per il riutilizzo della logica (il [Use-API](#use-api-for-accessing-logic)) e di markup (modello e istruzioni di chiamata), che può essere utilizzato per modularizzare il codice dei progetti.
+No, non è possibile. HTL dispone di potenti meccanismi di estensione per il riutilizzo della logica ([Use-API](#use-api-for-accessing-logic)) e di markup (istruzioni di modello e chiamata), che possono essere utilizzati per modulare il codice dei progetti.
 
 ### Quali sono i principali vantaggi di HTL rispetto a JSP? {#benefits}
 
@@ -57,10 +57,10 @@ Non ci sono piani in questo senso.
 
 ## Come si chiama? {#what-is-in-a-name}
 
-Nelle AEM 6.0 e 6.1, HTL è stato indicato come **Sightly**. Adobe rinominato in **Lingua del modello di HTML** o **HTL** chiarire a cosa serve la specifica e allinearsi alle linee guida generali per la denominazione dell’Adobe in generale. Questa modifica al nome è stata applicata a partire da agosto 2016 e si applica ad AEM versione 6.0 e successive.
+In AEM 6.0 e 6.1, HTL era indicato come **Sightly**. Adobe l’ha rinominato **HTML Template Language** o **HTL** per chiarire a cosa serve la specifica e per allinearla alle linee guida per i nomi di Adobe in generale. Questa modifica al nome è stata applicata a partire da agosto 2016 e si applica ad AEM versione 6.0 e successive.
 
 >[!NOTE]
 >
->Questa modifica al nome non influisce sul codice o sull’API, pertanto la compatibilità non è interessata. Per maggiori informazioni, [fai riferimento a questo video di annuncio.](https://helpx.adobe.com/it/experience-manager/how-to/announce-htl.html)
+>Questa modifica al nome non influisce sul codice o sull’API, pertanto la compatibilità non è interessata. Per ulteriori informazioni, [consulta questo video di annuncio.](https://helpx.adobe.com/it/experience-manager/how-to/announce-htl.html)
 
-Per saperne di più su HTL e un ottimo posto per iniziare è il nostro ufficiale [Guida introduttiva alla lingua dei modelli di HTML (HTL).](overview.md)
+Per saperne di più su HTL, un ottimo punto di partenza è la nostra [Guida introduttiva ad HTML Template Language (HTL)](overview.md).
