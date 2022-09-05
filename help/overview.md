@@ -3,9 +3,9 @@ title: Panoramica di HTL
 description: Scopri come AEM supporta il linguaggio HTL (HTML Template Language) per offrire un framework web a livello aziendale produttivo che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare meglio ai progetti AEM.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 source-git-commit: 5ab1275c984135fe946f36905bbc979cf19edd80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 69%
 
 L’obiettivo di HTL (HTML Template Language) supportato da Adobe Experience Manager (AEM) è offrire un framework web a livello aziendale a produttività elevata che aumenti la sicurezza e consenta agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 
-[Introdotto nella AEM 6.0,](history.md) HTML Template Language è il sistema di modelli lato server preferito e consigliato per HTML in AEM. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
+[Introdotto in AEM 6.0](history.md), HTML Template Language è il sistema di modelli lato server preferito e consigliato per HTML in AEM. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
 
 ## Maggiore sicurezza {#increased-security}
 
-Rispetto alla maggior parte degli altri sistemi di modelli, in HTML Template Language è possibile aumentare la sicurezza dei siti che lo utilizzano nella loro implementazione, perché HTL è in grado di applicare automaticamente l’escape in base al contesto appropriato a tutte le variabili che vengono inviate al livello di presentazione. Tutto ciò è possibile in quanto HTL comprende la sintassi HTML e utilizza tale conoscenza per modificare l’escape necessario per le espressioni in base alla loro posizione nell’ordine di markup. Questo si tradurrà, ad esempio, in espressioni posizionate in `href` o `src` gli attributi con escape diverso rispetto alle espressioni posizionate in altri attributi o altrove.
+Rispetto alla maggior parte degli altri sistemi basati su modelli, HTML Template Language aumenta la sicurezza dei siti in cui viene implementato in quanto è in grado di applicare automaticamente gli escape adeguati in base al contesto a tutte le variabili che vengono inviate al livello della presentazione. Tutto ciò è possibile in quanto HTL comprende la sintassi HTML e utilizza tale conoscenza per modificare l’escape necessario per le espressioni in base alla loro posizione nell’ordine di markup. Ciò si traduce, ad esempio, in espressioni posizionate in attributi `href` o `src` con un escape diverso rispetto a quelle posizionate in altri attributi o altrove.
 
 Sebbene sia possibile ottenere lo stesso risultato con i linguaggi basati su modelli come JSP, con questi ultimi lo sviluppatore deve accertarsi manualmente che l’escape corretto venga applicato a ogni variabile. Poiché una sola omissione o un singolo errore nell’escape applicato potrebbe causare una vulnerabilità cross-site scripting (XSS), abbiamo deciso di automatizzare questa attività con HTL. Se necessario, gli sviluppatori possono comunque specificare un escape diverso sulle espressioni. Con HTL, tuttavia, è molto più probabile che il comportamento predefinito corrisponda a quello desiderato, riducendo la probabilità di errori.
 
@@ -30,11 +30,11 @@ Queste funzionalità consentono agli sviluppatori HTML senza conoscenze Java e c
 
 ## Costi ridotti {#reduced-costs}
 
-Maggiore sicurezza, sviluppo semplificato e collaborazione di team migliorata, si traduce per progetti AEM con un impegno ridotto, tempi di commercializzazione più rapidi (TTM) e costi complessivi di gestione (TCO) inferiori.
+Una maggiore sicurezza, uno sviluppo semplificato e una migliore collaborazione in team si traducono, per i progetti AEM, in maggiore efficienza, tempi di realizzazione più rapidi e una riduzione del costo totale di proprietà.
 
 In concreto, considerando i dati registrati durante la reimplementazione del sito Adobe.com con HTML Template Language, si possono ridurre di circa il 25% sia i costi che la durata del progetto.
 
-![Aumento efficiente e riduzione dei costi](assets/chlimage_1.png)
+![Aumento dell’efficienza e riduzione dei costi](assets/chlimage_1.png)
 
 Il diagramma precedente mostra potenziali miglioramenti in termini di efficienza resi possibili da HTL:
 
@@ -44,12 +44,12 @@ Il diagramma precedente mostra potenziali miglioramenti in termini di efficienza
 
 ## Video introduttivo {#video}
 
-Il seguente video da un [sessione AEM Gems,](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-introduction-to-htl.html) fornisce una panoramica dello scopo di HTL e degli esempi di implementazione.
+Il seguente video da una [sessione AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-introduction-to-htl.html?lang=it), fornisce una panoramica dello scopo di HTL e degli esempi di implementazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19504/?quality=9)
 
-Nota che il video fa riferimento a HTL da [il suo nome precedente, Sightly.](history.md)
+Nota che il video fa riferimento a HTL dal [suo nome precedente, Sightly.](history.md)
 
 ## Passaggi successivi {#next-steps}
 
-Ora conosci gli obiettivi e i vantaggi di HTL, inizia a usare la lingua esaminando il documento [Guida introduttiva a HTML Template Language.](getting-started.md)
+Ora che conosci gli obiettivi e i vantaggi di HTL, inizia a usare il linguaggio esaminando il documento [Guida introduttiva a HTML Template Language.](getting-started.md)
