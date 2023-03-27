@@ -3,7 +3,7 @@ title: Java Use-API per HTL
 description: Java Use-API per HTL consente a un file HTL di accedere a metodi di supporto in una classe Java personalizzata.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 source-git-commit: f295fe81062f87d4f3f46705fb1e3d706d2a9d49
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1510'
 ht-degree: 100%
 
@@ -308,9 +308,9 @@ In questa sezione presenteremo alcune ulteriori funzioni che vanno oltre il semp
 * Trasferimento dei parametri a una classe use
 * Classe use Java in bundle
 
-### Trasmissione dei parametri {#passing-parameters}
+### Trasferimento dei parametri {#passing-parameters}
 
-I parametri possono essere trasmessi a una classe use al momento dell’inizializzazione.
+I parametri possono essere trasferiti a una classe use al momento dell’inizializzazione.
 
 Per maggiori dettagli, consulta la [documentazione del motore di script HTL di Sling](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html#passing-parameters-to-java-use-objects).
 
