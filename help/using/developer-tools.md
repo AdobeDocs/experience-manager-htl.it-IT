@@ -3,7 +3,7 @@ title: Strumenti per gli sviluppatori
 description: Consulta questi strumenti utili per sviluppare in HTL.
 exl-id: c5683ee4-a052-4a6f-8ad1-e18a4201414e
 source-git-commit: 88edbd2fd66de960460df5928a3b42846d32066b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 100%
 
