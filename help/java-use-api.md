@@ -3,9 +3,9 @@ title: Java Use-API per HTL
 description: Java Use-API per HTL consente a un file HTL di accedere a metodi di supporto in una classe Java personalizzata.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 source-git-commit: 83f07cab5e2f4604701708f6a1a4bc19e3b54107
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1505'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 Java Use-API per HTL consente a un file HTL di accedere a metodi di supporto in una classe Java personalizzata.
 
-## Caso d’uso  {#use-case}
+## Caso d’uso {#use-case}
 
 Java Use-API per HTL consente a un file HTL di accedere a metodi di supporto in una classe Java personalizzata tramite `data-sly-use`. Questo consente di incapsulare nel codice Java tutte le logiche di business complesse, mentre il codice HTL tratta solo la produzione di markup diretto.
 
@@ -155,7 +155,7 @@ public class Info extends WCMUsePojo {
 
 ### Estensione `WCMUsePojo` {#extending-wcmusepojo}
 
-Mentre ci sono diversi modi per incorporare una classe Java con HTL, il più semplice è quello di estendere il `WCMUsePojo` classe. Per il nostro esempio `/apps/my-example/component/info/Info.java`:
+Ci sono diversi modi per incorporare una classe Java con HTL, ma quello più semplice consiste nell’estendere la classe `WCMUsePojo`. Per il nostro esempio `/apps/my-example/component/info/Info.java`:
 
 ```java
 package apps.my_example.components.info;
