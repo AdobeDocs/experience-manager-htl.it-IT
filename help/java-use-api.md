@@ -3,7 +3,7 @@ title: Java Use-API per HTL
 description: Java Use-API per HTL consente a un file HTL di accedere a metodi di supporto in una classe Java personalizzata.
 exl-id: 9a9a2bf8-d178-4460-a3ec-cbefcfc09959
 source-git-commit: 83f07cab5e2f4604701708f6a1a4bc19e3b54107
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 100%
 
