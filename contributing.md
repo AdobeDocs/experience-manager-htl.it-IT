@@ -1,8 +1,8 @@
 ---
-source-git-commit: 22f62868df0fcfc558e5d62434dde843a9f3ca83
+source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 # Contribuire alla documentazione di Adobe Experience Manager
@@ -30,7 +30,7 @@ Il metodo scelto dipende dal grado di familiarità con le procedure di modifica 
 
 >[!NOTE]
 >
->I contributi inviati sono soggetti alle [condizioni d’uso di Adobe.](https://www.adobe.com/it/legal/terms.html)
+>I contributi inviati sono coperti dalle [condizioni d&#39;uso di Adobe](https://www.adobe.com/it/legal/terms.html).
 
 ### Segnalare un problema {#create-an-issue}
 
