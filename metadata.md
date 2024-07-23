@@ -5,25 +5,25 @@ product: adobe experience manager
 git-repo: https://github.com/AdobeDocs/experience-manager-htl.it-IT
 index: y
 recommendations: noDisplay
-source-git-commit: f891460cc7f247723c3e78031aba385faca6acd7
+source-git-commit: 22f62868df0fcfc558e5d62434dde843a9f3ca83
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 100%
+source-wordcount: '81'
+ht-degree: 40%
 
 ---
 
 
 # Metadati per uso interno
 
-I metadati nel sistema di authoring GitHub sono gerarchici, in base ai seguenti livelli crescenti di precedenza.
+Il sistema di authoring GitHub definisce i metadati in modo gerarchico, con livelli di precedenza crescenti come mostrato di seguito:
 
 1. metadata.md
 1. Sommario
 1. Articolo
 
-I metadati definiti nel file metadata.md si applicano all’intero archivio, ma possono essere ignorati a livello di sommario e articolo. Eventuali esclusioni dei metadati devono essere eseguite al livello più basso possibile.
+I metadati definiti nel file metadata.md si applicano all’intero archivio, ma possono essere ignorati a livello di sommario e di articolo. Eventuali esclusioni dei metadati devono essere eseguite al livello più basso possibile.
 
-I metadati nell’archivio experience-manager-core-components.en rappresentano il minimo richiesto.
+I metadati nell&#39;archivio `experience-manager-core-components.en` sono il minimo richiesto.
 
 metadata.md
 
@@ -51,4 +51,3 @@ Articolo
 * `description`
 * `index: n` (solo per le versioni precedenti dei componenti)
 
-Ulteriori informazioni sui metadati sono disponibili nella [guida all’authoring interno.](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/features/metadata.html?lang=it#solution)

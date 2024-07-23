@@ -1,11 +1,11 @@
 ---
 title: Estensioni AEM
-description: AEM offre estensioni della specifica HTL per AEM, utili per gli sviluppatori.
+description: L’AEM offre estensioni della specifica HTL all’AEM per comodità degli sviluppatori.
 exl-id: d78cb84d-f958-45e2-9c6c-df86a68277d5
-source-git-commit: 88edbd2fd66de960460df5928a3b42846d32066b
+source-git-commit: ebeac25c38b81c92011c163c7860688f43547a7d
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 100%
+source-wordcount: '228'
+ht-degree: 64%
 
 ---
 
@@ -21,15 +21,15 @@ Le stesse [tre opzioni aggiuntive](https://sling.apache.org/documentation/bundle
 * `hint`
 * `basename`
 
-Tuttavia, in AEM il [supporto all’internazionalizzazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/internationalization/i18n-dev.html?lang=it) per HTL viene implementato con l’aiuto dell’API dal pacchetto `com.day.cq.i18n`.
+Tuttavia, in AEM il [supporto all’internazionalizzazione](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/components/internationalization/i18n-dev) per HTL viene implementato con l’aiuto dell’API dal pacchetto `com.day.cq.i18n`.
 
-## data-sly-include {#data-sly-include}
+## `data-sly-include` {#data-sly-include}
 
 In AEM, `data-sly-include` può richiedere un’opzione `wcmmode` aggiuntiva che controlla la [Modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/WCMMode.html) per lo script incluso. I valori consentiti sono i nomi delle costanti enum disponibili.
 
-## data-sly-resource {#data-sly-resource}
+## `data-sly-resource` {#data-sly-resource}
 
-Oltre ai percorsi e `Resources`, l’elemento del blocco `data-sly-resource` può anche funzionare con [`Maps`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html) o [`Records`.](https://github.com/apache/sling-org-apache-sling-scripting-sightly-runtime/blob/master/src/main/java/org/apache/sling/scripting/sightly/Record.java) Con entrambi gli approcci, è necessario specificare la proprietà Stringa `resourceName`. Il relativo valore viene utilizzato per creare una [Risorsa sintetica](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/org/apache/sling/api/resource/SyntheticResource.html) che verrà inclusa nel contesto di rendering. Le altre proprietà da `Record` o `Map` trasmesse a `data-sly-resource` vengono utilizzate come normali proprietà `Resource`. Se la proprietà `sling:resourceType` manca in questa mappa, come tipo di risorsa sarà considerato il valore dell’[opzione espressione](https://github.com/adobe/htl-spec/blob/1.4/SPECIFICATION.md#229-resource) `resourceType` oppure il tipo della risorsa corrente che gestisce il rendering.
+Oltre ai percorsi e `Resources`, l’elemento del blocco `data-sly-resource` può anche funzionare con [`Maps`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html) o [`Records`.](https://github.com/apache/sling-org-apache-sling-scripting-sightly-runtime/blob/master/src/main/java/org/apache/sling/scripting/sightly/Record.java) Con entrambi gli approcci, è necessario specificare la proprietà Stringa `resourceName`. Il relativo valore viene utilizzato per creare una [Risorsa sintetica](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/org/apache/sling/api/resource/SyntheticResource.html) inclusa nel contesto di rendering. Le altre proprietà da `Record` o `Map` passate a `data-sly-resource` vengono utilizzate come normali proprietà di `Resource`. Se la proprietà `sling:resourceType` non è presente in questa mappa, si presume che il tipo di risorsa sia il valore dell&#39;opzione `resourceType` [espressione](https://github.com/adobe/htl-spec/blob/1.4/SPECIFICATION.md#229-resource) o il tipo della risorsa corrente che gestisce il rendering.
 
 Considerate le seguenti proprietà mappa/record disponibili nell’ambito dello script come `map`:
 
