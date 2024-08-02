@@ -3,9 +3,9 @@ title: Oggetti globali di HTL
 description: Scopri gli oggetti enumerabili, gli oggetti basati su Java e gli oggetti basati su JavaScript in HTL.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Questi oggetti consentono di accedere facilmente a informazioni di uso comune. I
 
 ## Oggetti supportati da Java {#java-backed-objects}
 
-L&#39;oggetto Java corrispondente supporta ciascuno dei seguenti oggetti.
+L’oggetto Java corrispondente supporta ciascuno dei seguenti oggetti.
 
 | Nome della variabile | Descrizione |
 |---|---|
