@@ -2,15 +2,21 @@
 title: Panoramica di HTL
 description: Scopri come AEM supporta HTL (HTML Template Language) per fornire un’infrastruttura web di livello enterprise produttiva che migliora la sicurezza. Questa infrastruttura consente agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
-source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: ht
-source-wordcount: '645'
-ht-degree: 100%
+source-git-commit: 9735ca6ae09ca899c69edd9b63d2e85ad5d6f904
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 95%
 
 ---
 
 
 # Panoramica {#overview}
+
+>[!TIP]
+>
+>**Hai considerato Edge Delivery Services per AEM?**
+>
+>È possibile continuare a utilizzare i metodi descritti in questo documento per i progetti esistenti. Tuttavia, per i nuovi progetti, Adobe consiglia di sfruttare [Edge Delivery Services.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview)
 
 HTML Template Language (HTL), supportato da Adobe Experience Manager (AEM), mira a fornire un’infrastruttura web di livello enterprise produttiva che migliora la sicurezza. Consente inoltre agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 
