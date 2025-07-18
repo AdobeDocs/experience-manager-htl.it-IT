@@ -2,10 +2,10 @@
 title: Guida introduttiva ad HTL
 description: Scopri HTL, il sistema di modelli lato server preferito e consigliato per HTML in AEM, e i principali concetti del linguaggio e dei suoi costrutti fondamentali.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
-source-git-commit: c6bb6f0954ada866cec574d480b6ea5ac0b51a3f
-workflow-type: ht
-source-wordcount: '2050'
-ht-degree: 100%
+source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
+workflow-type: tm+mt
+source-wordcount: '2045'
+ht-degree: 97%
 
 ---
 
@@ -25,8 +25,8 @@ Questo documento fornisce una panoramica dello scopo di HTL e un’introduzione 
 In AEM, un certo numero di livelli definiscono HTL.
 
 1. **[Specifica HTL](specification.md)**: HTL è una specifica open-source, indipendente dalla piattaforma, che chiunque può implementare.
-1. **[Motore di script HTL Sling](specification.md)**: il progetto Sling ha creato l’implementazione di riferimento di HTL, utilizzata da AEM.
-1. **[Estensioni AEM](specification.md)**: AEM si basa sul motore di script HTL Sling per offrire agli sviluppatori funzioni adeguate specifiche per AEM.
+1. Motore di script HTL **[`Sling`](specification.md)** - Il progetto `Sling` ha creato l&#39;implementazione di riferimento di HTL, utilizzata da AEM.
+1. **[Estensioni AEM](specification.md)** - AEM si basa sul motore di script HTL `Sling` per offrire agli sviluppatori funzionalità convenienti specifiche per AEM.
 
 Questa documentazione si concentra sull’utilizzo di HTL per sviluppare soluzioni AEM. Come tale, tocca tutti e tre i livelli, collegando le risorse esterne in base alle esigenze.
 
@@ -269,7 +269,7 @@ In HTL, le librerie client vengono caricate tramite un modello helper fornito da
 * **`js`**: carica solo i file JavaScript delle librerie client di riferimento.
 * **`all`**: carica tutti i file delle librerie client di riferimento (sia CSS che JavaScript).
 
-Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere una matrice di valori stringa o una stringa contenente un elenco di valori separati da virgola.
+Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere un array di valori stringa o una stringa contenente un elenco di valori separati da virgola.
 
 Di seguito sono riportati due brevi esempi.
 
