@@ -3,9 +3,9 @@ title: Panoramica di HTL
 description: Scopri come AEM supporta HTL (HTML Template Language) per fornire un’infrastruttura web di livello enterprise produttiva che migliora la sicurezza. Questa infrastruttura consente agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
 source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

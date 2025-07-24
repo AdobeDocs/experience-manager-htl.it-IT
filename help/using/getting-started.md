@@ -3,9 +3,9 @@ title: Guida introduttiva ad HTL
 description: Scopri HTL, il sistema di modelli lato server preferito e consigliato per HTML in AEM, e i principali concetti del linguaggio e dei suoi costrutti fondamentali.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
 source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2045'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,15 +18,15 @@ Questo documento fornisce una panoramica dello scopo di HTL e un’introduzione 
 
 >[!TIP]
 >
->Questo documento presenta lo scopo di HTL e una panoramica della sua struttura e dei suoi concetti fondamentali. Se hai domande sulla sintassi, consulta la [specifica HTL](specification.md).
+>Questo documento presenta lo scopo di HTL e una panoramica della sua struttura e dei suoi concetti fondamentali. Se hai domande sulla sintassi specifica, consulta la [specifica HTL](specification.md).
 
 ## Livelli HTL {#layers}
 
 In AEM, un certo numero di livelli definiscono HTL.
 
 1. **[Specifica HTL](specification.md)**: HTL è una specifica open-source, indipendente dalla piattaforma, che chiunque può implementare.
-1. Motore di script HTL **[`Sling`](specification.md)** - Il progetto `Sling` ha creato l&#39;implementazione di riferimento di HTL, utilizzata da AEM.
-1. **[Estensioni AEM](specification.md)** - AEM si basa sul motore di script HTL `Sling` per offrire agli sviluppatori funzionalità convenienti specifiche per AEM.
+1. **[`Sling`Motore di script HTL](specification.md)**: il progetto `Sling` ha creato l’implementazione di riferimento di HTL, utilizzata da AEM.
+1. **[Estensioni AEM](specification.md)**: AEM si basa sul motore di script HTL `Sling` per offrire agli sviluppatori funzioni adeguate specifiche per AEM.
 
 Questa documentazione si concentra sull’utilizzo di HTL per sviluppare soluzioni AEM. Come tale, tocca tutti e tre i livelli, collegando le risorse esterne in base alle esigenze.
 
