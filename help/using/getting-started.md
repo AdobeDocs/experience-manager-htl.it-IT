@@ -2,9 +2,9 @@
 title: Guida introduttiva ad HTL
 description: Scopri HTL, il sistema di modelli lato server preferito e consigliato per HTML in AEM, e i principali concetti del linguaggio e dei suoi costrutti fondamentali.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
-source-git-commit: addc69e4b4e56a9b1c5f91ce9af26fa2d326d981
-workflow-type: ht
-source-wordcount: '2045'
+source-git-commit: a496d23277902a5cd573a6a8af770f27b0269f05
+workflow-type: tm+mt
+source-wordcount: '2077'
 ht-degree: 100%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 100%
 HTML Template Language (HTL) è il sistema di modelli lato server preferito e consigliato per HTML in Adobe Experience Manager. Come in tutti i sistemi di modelli HTML lato server, un file HTL definisce l’output inviato al browser specificando l’HTML stesso, alcune logiche di presentazione di base e variabili da valutare in fase di esecuzione.
 
 Questo documento fornisce una panoramica dello scopo di HTL e un’introduzione ai concetti e costrutti fondamentali del linguaggio.
+
+>[!TIP]
+>
+>**Hai preso in considerazione Edge Delivery Services per AEM?**
+>
+>È possibile continuare a utilizzare i metodi descritti in questo documento per i progetti esistenti. Tuttavia, per i nuovi progetti, Adobe consiglia di sfruttare [Edge Delivery Services.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview)
 
 >[!TIP]
 >
