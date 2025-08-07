@@ -3,7 +3,7 @@ title: Guida introduttiva ad HTL
 description: Scopri HTL, il sistema di modelli lato server preferito e consigliato per HTML in AEM, e i principali concetti del linguaggio e dei suoi costrutti fondamentali.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
 source-git-commit: a496d23277902a5cd573a6a8af770f27b0269f05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2077'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Questo documento fornisce una panoramica dello scopo di HTL e un’introduzione 
 
 >[!TIP]
 >
->Questo documento presenta lo scopo di HTL e una panoramica della sua struttura e dei suoi concetti fondamentali. Se hai domande sulla sintassi specifica, consulta la [specifica HTL](specification.md).
+>Questo documento presenta lo scopo di HTL e una panoramica della struttura e dei concetti fondamentali. Se hai domande sulla sintassi specifica, consulta la [specifica HTL](specification.md).
 
 ## Livelli HTL {#layers}
 
