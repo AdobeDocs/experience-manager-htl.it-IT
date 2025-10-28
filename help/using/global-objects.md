@@ -3,9 +3,9 @@ title: Oggetti globali di HTL
 description: Scopri gli oggetti enumerabili, gli oggetti basati su Java e gli oggetti basati su JavaScript in HTL.
 exl-id: ca590b92-f1b3-4e44-a04a-a2c10dff256f
 index: false
-source-git-commit: a496d23277902a5cd573a6a8af770f27b0269f05
-workflow-type: ht
-source-wordcount: '203'
+source-git-commit: 391c5279f0021dbedaffb0c63e67e037d6c782e1
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 100%
 
 # Oggetti globali di HTL {#htl-global-objects}
 
-Senza dover specificare nulla, HTL fornisce l’accesso a molti oggetti utili allo sviluppatore. Questi oggetti sono in aggiunta a quelli che possono essere introdotti tramite [Use-API](java-use-api.md).
+Senza dover specificare nulla, HTL fornisce l’accesso a molti oggetti utili allo sviluppatore. Questi oggetti sono in aggiunta a quelli che possono essere introdotti tramite [Use-API](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/java-use-api).
 
 >[!NOTE]
 >
 >Per gli sviluppatori che hanno familiarità con lo sviluppo JSP in AEM, HTL fornisce l’accesso a tutti gli oggetti che erano comunemente disponibili in JSP dopo aver incluso `global.jsp`.
 
-## Oggetti elencabili {#enumerable-objects}
+## Oggetti enumerabili {#enumerable-objects}
 
 Questi oggetti consentono di accedere facilmente a informazioni di uso comune. Il loro contenuto è accessibile mediante notazione col punto e può essere iterato tramite `data-sly-list` o `data-sly-repeat`.
 
