@@ -20,7 +20,7 @@ ht-degree: 99%
 
 HTML Template Language (HTL), supportato da Adobe Experience Manager (AEM), mira a fornire un’infrastruttura web di livello enterprise produttiva che migliora la sicurezza. Consente inoltre agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 
-[Introdotto in AEM 6.0](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/history), HTML Template Language è il sistema di modelli lato server preferito e consigliato per HTML in AEM. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
+[Introdotto in AEM 6.0](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/history), HTML Template Language è il sistema di modelli lato server preferito e consigliato per HTML in AEM. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
 
 <!--
 history.md
@@ -58,7 +58,7 @@ Il seguente video proveniente da una [sessione AEM Gems](https://experienceleagu
 
 >[!VIDEO](https://video.tv.adobe.com/v/19504/?quality=9)
 
-Nota che il video fa riferimento a HTL dal [suo nome precedente, Sightly](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/history).
+Nota che il video fa riferimento a HTL dal [suo nome precedente, Sightly](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/history).
 
 <!--
 history.md
@@ -66,7 +66,7 @@ history.md
 
 ## Passaggi successivi {#next-steps}
 
-Ora che conosci gli obiettivi e i vantaggi di HTL, puoi iniziare a utilizzare il linguaggio. Consulta [Guida introduttiva a HTML Template Language](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/getting-started).
+Ora che conosci gli obiettivi e i vantaggi di HTL, puoi iniziare a utilizzare il linguaggio. Consulta [Guida introduttiva a HTML Template Language](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/getting-started).
 
 <!--
 getting-started.md

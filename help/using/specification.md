@@ -21,6 +21,6 @@ HTML Template Language (HTL) è il sistema di modelli lato server preferito e co
 
 1. **[Specifiche HTL](https://github.com/adobe/htl-spec)**: HTL è una specifica open-source, indipendente dalla piattaforma, che chiunque può implementare. Le sue specifiche sono mantenute nel suo archivio GitHub.
 1. **[Motore di script HTL Sling](https://sling.apache.org/documentation/bundles/scripting/scripting-htl.html)**: il progetto `Sling` ha creato l’implementazione di riferimento di HTL, utilizzata da AEM. Il progetto `Sling` mantiene la propria documentazione.
-1. **[Estensioni AEM](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/aem-extensions)** - AEM si basa sul motore di script HTL `Sling` per offrire agli sviluppatori funzionalità convenienti specifiche per AEM. Queste estensioni sono documentate come parte di questo set di documentazione.
+1. **[Estensioni AEM](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/aem-extensions)** - AEM si basa sul motore di script HTL `Sling` per offrire agli sviluppatori funzionalità convenienti specifiche per AEM. Queste estensioni sono documentate come parte di questo set di documentazione.
 
 Segui i link riportati qui sopra per consultare la documentazione dedicata per tutti i livelli di HTL utilizzati da AEM.
