@@ -2,10 +2,10 @@
 title: Panoramica di HTL
 description: Scopri come AEM supporta HTL (HTML Template Language) per fornire un’infrastruttura web di livello enterprise produttiva che migliora la sicurezza. Questa infrastruttura consente agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
-source-git-commit: 391c5279f0021dbedaffb0c63e67e037d6c782e1
+source-git-commit: 84db446b019d74070ce4af64091dd0674dab9d33
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 99%
+source-wordcount: '677'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 HTML Template Language (HTL), supportato da Adobe Experience Manager (AEM), mira a fornire un’infrastruttura web di livello enterprise produttiva che migliora la sicurezza. Consente inoltre agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 
-[Introdotto in AEM 6.0](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/history), HTML Template Language è il sistema di modelli lato server preferito e consigliato per HTML in AEM. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
+[Introdotto in AEM 6.0](history.md), HTML Template Language è il sistema di modelli lato server preferito e consigliato per HTML in AEM. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
 
 <!--
 history.md
@@ -58,16 +58,8 @@ Il seguente video proveniente da una [sessione AEM Gems](https://experienceleagu
 
 >[!VIDEO](https://video.tv.adobe.com/v/19504/?quality=9)
 
-Nota che il video fa riferimento a HTL dal [suo nome precedente, Sightly](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/history).
-
-<!--
-history.md
--->
+Nota che il video fa riferimento a HTL dal [suo nome precedente, Sightly](history.md).
 
 ## Passaggi successivi {#next-steps}
 
-Ora che conosci gli obiettivi e i vantaggi di HTL, puoi iniziare a utilizzare il linguaggio. Consulta [Guida introduttiva a HTML Template Language](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/getting-started).
-
-<!--
-getting-started.md
--->
+Ora che conosci gli obiettivi e i vantaggi di HTL, puoi iniziare a utilizzare il linguaggio. Consulta [Guida introduttiva a HTML Template Language](getting-started.md).
