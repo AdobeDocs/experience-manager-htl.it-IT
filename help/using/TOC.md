@@ -6,10 +6,10 @@ user-guide-description: Per i progetti AEM tradizionali, utilizza HTML Template 
 feature-set: Experience Manager
 feature: Developer Tools
 role: Developer
-source-git-commit: e9148a152c5b9298233346d93809c80e35f980d0
+source-git-commit: b73388b1c6db9993cf979f8d3023410dea8d8ae8
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,3 +25,4 @@ ht-degree: 100%
 + [Strumenti per gli sviluppatori](developer-tools.md)
 + [Esempi di codice](code-samples.md)
 + [Storia di HTL](history.md)
+
