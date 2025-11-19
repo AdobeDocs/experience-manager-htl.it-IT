@@ -2,10 +2,10 @@
 title: Panoramica di HTL
 description: Scopri come AEM supporta HTL (HTML Template Language) per fornire un’infrastruttura web di livello enterprise produttiva che migliora la sicurezza. Questa infrastruttura consente agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 exl-id: 5d06ff25-d681-4b95-8375-c28a8364eb7e
-source-git-commit: 84db446b019d74070ce4af64091dd0674dab9d33
+source-git-commit: 5a493aea198f5e70834f5882fc0af9ac855717df
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,10 +21,6 @@ ht-degree: 100%
 HTML Template Language (HTL), supportato da Adobe Experience Manager (AEM), mira a fornire un’infrastruttura web di livello enterprise produttiva che migliora la sicurezza. Consente inoltre agli sviluppatori HTML senza conoscenze Java di partecipare in modo migliore ai progetti AEM.
 
 [Introdotto in AEM 6.0](history.md), HTML Template Language è il sistema di modelli lato server preferito e consigliato per HTML in AEM. HTML Template Language supporta gli sviluppatori web nella creazione di siti web aziendali affidabili, aumentando la sicurezza e l’efficienza dello sviluppo.
-
-<!--
-history.md
--->
 
 ## Maggiore sicurezza {#increased-security}
 
