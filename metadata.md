@@ -2,15 +2,15 @@
 solution: Experience Manager
 type: Documentation
 product: adobe experience manager
-git-repo: https://github.com/AdobeDocs/experience-manager-htl.it-IT
-index: y
+git-repo: https://github.com/AdobeDocs/experience-manager-htl.en
+index: true
 landing-page-name: experience-manager
 landing-page-breadcrumb-title: AEM
 recommendations: noDisplay
-source-git-commit: 5c7a0f5795bcbb3b4a5fb34f2d49aad6aa31122f
+source-git-commit: 944fa924e7ccba0a195b2c92584ab75df86b1f83
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 40%
+source-wordcount: '86'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 40%
 Il sistema di authoring GitHub definisce i metadati in modo gerarchico, con livelli di precedenza crescenti come mostrato di seguito:
 
 1. metadata.md
-1. Sommario
+1. ToC
 1. Articolo
 
 I metadati definiti nel file metadata.md si applicano all’intero archivio, ma possono essere ignorati a livello di sommario e di articolo. Eventuali esclusioni dei metadati devono essere eseguite al livello più basso possibile.
@@ -31,9 +31,9 @@ metadata.md
 
 * `product`
 * `git-repo`
-* `index: y`
+* `index: true`
 
-Non più utilizzati:
+Non più utilizzato:
 
 * `solution-title`
 * `solution-hub-url`
@@ -42,7 +42,7 @@ Non più utilizzati:
 * `tutorials-title`
 * `tutorials-url`
 
-Sommario
+ToCs
 
 * `sub-product`
 * `user-guide-title`
@@ -51,5 +51,5 @@ Articolo
 
 * `title`
 * `description`
-* `index: n` (solo per le versioni precedenti dei componenti)
+* `index: false` (solo per le versioni precedenti dei componenti)
 
