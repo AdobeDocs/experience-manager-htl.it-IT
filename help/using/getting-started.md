@@ -11,15 +11,15 @@ topic_v2:
   - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
   - id: ea99d093-20a6-45a0-99ac-a82e7018eb37
 source-git-commit: f487047a68e98d1b089e0e7124ab91f3281d51ad
-workflow-type: tm+mt
-source-wordcount: 2077
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: 2153
+ht-degree: 100%
 
 ---
 
 # Guida introduttiva ad HTL {#getting-started-with-htl}
 
-HTML Template Language (HTL) è il sistema di modelli lato server preferito e consigliato per HTML in Adobe Experience Manager. Come in tutti i sistemi di modelli HTML lato server, un file HTL definisce l’output inviato al browser specificando l’HTML stesso, alcune logiche di presentazione di base e variabili da valutare in fase di esecuzione.
+HTML Template Language (HTL) è il sistema di modelli lato server preferito e consigliato per HTML in Adobe Experience Manager.Come in tutti i sistemi di modelli HTML lato server, un file HTL definisce l’output inviato al browser specificando l’HTML stesso, alcune logiche di presentazione di base e variabili da valutare in fase di esecuzione.
 
 Questo documento fornisce una panoramica dello scopo di HTL e un’introduzione ai concetti e costrutti fondamentali del linguaggio.
 
