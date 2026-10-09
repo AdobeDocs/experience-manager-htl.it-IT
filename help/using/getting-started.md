@@ -2,21 +2,18 @@
 title: Guida introduttiva ad HTL
 description: Scopri HTL, il sistema di modelli lato server preferito e consigliato per HTML in AEM, e i principali concetti del linguaggio e dei suoi costrutti fondamentali.
 exl-id: c95eb1b3-3b96-4727-8f4f-d54e7136a8f9
-TQID: https://experienceleague.adobe.com/6IcNpWu2-PLGresZ1H-HM9HAFL-dY5eF0OyIdXJbJ4s
+TQID: 'https://experienceleague.adobe.com/6IcNpWu2-PLGresZ1H-HM9HAFL-dY5eF0OyIdXJbJ4s'
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a732f735-539c-44c2-ad33-4aa4f7480b3a
-  - id: ea99d093-20a6-45a0-99ac-a82e7018eb37
-source-git-commit: f487047a68e98d1b089e0e7124ab91f3281d51ad
+    internal-label: Developer
+source-git-commit: ad1e15465b8b969663842d4946a1fa182821bcc1
 workflow-type: tm+mt
-source-wordcount: 2153
+source-wordcount: '2153'
 ht-degree: 100%
-
 ---
-
 # Guida introduttiva ad HTL {#getting-started-with-htl}
 
 HTML Template Language (HTL) è il sistema di modelli lato server preferito e consigliato per HTML in Adobe Experience Manager. Come in tutti i sistemi di modelli HTML lato server, un file HTL definisce l’output inviato al browser specificando l’HTML stesso, alcune logiche di presentazione di base e variabili da valutare in fase di esecuzione.
@@ -253,14 +250,14 @@ Di nuovo, questo processo è possibile perché HTL comprende la sintassi HTML e 
 Inoltre, è importante il tipo di variabile posizionata nell’espressione:
 
 * **Stringa:**
-   * **non vuota:** imposta la stringa come valore di attributo.
-   * **vuota:** rimuove completamente l’attributo.
+  * **non vuota:** imposta la stringa come valore di attributo.
+  * **vuota:** rimuove completamente l’attributo.
 
 * **Numero:** imposta il valore come valore di attributo.
 
 * **Booleano:**
-   * **true:** visualizza l’attributo senza valore (come attributo HTML booleano)
-   * **false:** rimuove completamente l’attributo.
+  * **true:** visualizza l’attributo senza valore (come attributo HTML booleano)
+  * **false:** rimuove completamente l’attributo.
 
 Di seguito un esempio di come un’espressione booleana può consentire di controllare un attributo HTML booleano:
 
